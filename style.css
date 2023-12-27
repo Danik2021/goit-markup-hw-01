@@ -1,9 +1,41 @@
-.button {
-    padding: 5px 50px;
-    background-color: tomato;
-    border-radius: 20px;
+@import url(reset.css);
+
+a {
+  text-decoration: none;
 }
 
-.h1 {
-    color: black;
+body {
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100px;
+  align-items: center;
+}
+
+.wrapper {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 40px;
+  position: relative;
+  right: 100px;
+}
+
+.header-menu {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 26px;
+}
+
+.span-logo {
+  color: #2196f3;
 }
