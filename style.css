@@ -12,7 +12,7 @@ body {
 header {
   display: flex;
   justify-content: space-evenly;
-  height: 100px;
+  height: 80px;
   align-items: center;
 }
 
@@ -110,7 +110,7 @@ h1 {
 
 .cont-section-two {
   margin-top: 94px;
-  max-width: max-content;
+  /* max-width: max-content; */
   height: 98px;
   flex-shrink: 0;
   display: flex;
@@ -137,4 +137,100 @@ h1 {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.42px;
+}
+/* СЕКЦІЯ 3 */
+.section-three {
+  margin-top: 120px;
+}
+
+.cont-section-three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cont-section-three h2 {
+  text-align: center;
+  color: #212121;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-bottom: 50px;
+}
+
+.cont-img-work {
+  display: flex;
+  column-gap: 30px;
+}
+
+.section-four {
+  margin-top: 94px;
+  background: #f5f4fa;
+  display: flex;
+  justify-content: center;
+  height: 648px;
+}
+
+.cont-img-team {
+  display: flex;
+  column-gap: 30px;
+  max-width: 1170px;
+}
+
+.cont-section-four h2 {
+  color: #212121;
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  margin-top: 94px;
+  margin-bottom: 50px;
+}
+
+.figure-one,
+.figure-two,
+.figure-three,
+.figure-four {
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
+  background: #fff;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+figcaption {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  color: #212121;
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.48px;
+}
+
+.specialty-one,
+.specialty-two,
+.specialty-three,
+.specialty-four {
+  margin-bottom: 30px;
+  color: #757575;
+  text-align: center;
+  font-family: 'Roboto', 'sans-serif';
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.48px;
+}
+
+.footer {
+  background: #2f303a;
+  height: 252px;
+  display: flex;
+  flex-direction: column;
 }
