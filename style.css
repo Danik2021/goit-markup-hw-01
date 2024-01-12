@@ -228,9 +228,54 @@ figcaption {
   letter-spacing: 0.48px;
 }
 
-.footer {
+footer {
   background: #2f303a;
   height: 252px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 215px;
+}
+
+.logo-two {
+  font-size: 26px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.location {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  margin-bottom: 9px;
+}
+
+.email-two {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
+  margin-bottom: 9px;
+}
+
+.phone-two {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.42px;
 }
