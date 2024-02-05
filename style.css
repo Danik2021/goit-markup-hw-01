@@ -280,3 +280,8 @@ footer {
   line-height: 24px;
   letter-spacing: 0.42px;
 }
+
+.cont-footer {
+  display: flex;
+  flex-direction: column;
+}
