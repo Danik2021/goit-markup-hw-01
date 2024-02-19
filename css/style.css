@@ -1,15 +1,13 @@
 :root {
-  --main-font-family: 'Roboto', sans-serif;
-  --primary-text-color: #757575;
-  --title-text-color: #212121;
-  --accent-color: #2196f3;
-  --button-color: #ffffff;
-  --fill-color: #afb1b8;
+  --main_font_family: 'Roboto', sans-serif;
+  --main_text_color: #212121;
+  --main_hover_color: #2196f3;
 }
 /* Body */
 body {
-  font-family: var(--main-font-family);
-  color: var(--title-text-color);
+  font-family: var(--main_font_family);
+  font-weight: 500;
+  color: var(--main_text_color);
 }
 
 /* Links */
@@ -19,7 +17,7 @@ body {
 
 .link:hover,
 .link:focus {
-  color: var(--main-hover-color);
+  color: var(--main_hover_color);
 }
 
 .list {
@@ -28,11 +26,11 @@ body {
 
 a.email,
 a.phone {
-  font-family: var(--main-font-family);
+  font-family: var(--main_font_family);
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 /* Header */
 
@@ -47,24 +45,24 @@ a.phone {
 }
 
 .span-logo {
-  font-family: var(--accent-color);
-  color: var(--accent-color);
+  font-family: inherit;
+  color: #2196f3;
 }
 /* nav_menu  */
 
 .nav_menu li {
   display: inline-block;
-  font-family: var(--main-font-family);
+  font-family: var(--main_font_family);
   line-height: 1.14;
   font-size: 14px;
-  color: var(--main-title-color);
+  color: var(--main_text_color);
   letter-spacing: 0.02em;
   font-weight: 500;
 }
 
 .nav_menu li:hover,
 .nav_menu li:focus {
-  color: var(--main-hover-color);
+  color: var(--main_hover_color);
   cursor: pointer;
 }
 
@@ -76,19 +74,22 @@ a.phone {
 
 /* Text h2 h3  */
 
-.section-title {
+.main-title,
+.whatDo-title,
+.aboutUs-title,
+.ourTeam-title {
   text-align: center;
   font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 .main-text {
   width: 696px;
-  font-family: var(--main-font-family);
-  color: var(--button-color);
+  font-family: var(--main_font_family);
+  color: #ffffff;
   font-size: 44px;
   line-height: 1.4;
   font-weight: 900;
@@ -96,9 +97,9 @@ a.phone {
   text-transform: uppercase;
 }
 
-.cont-about-us h3 {
-  font-family: var(--main-font-family);
-  color: var(--title-text-color);
+.cont-aboutUs-section h3 {
+  font-family: var(--main_font_family);
+  color: #212121;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
@@ -106,21 +107,12 @@ a.phone {
 }
 
 .cont-employee h3 {
-  font-family: var(--main-font-family);
+  font-family: var(--main_font_family);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--title-text-color);
-}
-
-.section-title h2 {
-  font-family: var(--main-font-family);
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--title-text-color);
+  color: #212121;
 }
 
 /* Buttons */
@@ -129,28 +121,28 @@ a.phone {
   width: 216px;
   height: 50px;
   text-align: center;
-  background-color: var(--accent-color);
-  color: var(--button-color);
+  background-color: #2196f3;
+  color: #ffffff;
   font-size: 16px;
-  font-family: var(--main-font-family);
+  font-family: var(--main_font_family);
 }
 
-.cont-about-us p {
-  font-family: var(--main-font-family);
+.cont-aboutUs-section p {
+  font-family: var(--main_font_family);
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 .cont-employee p {
-  font-family: var(--main-font-family);
+  font-family: var(--main_font_family);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--primary-text-color);
+  color: #757575;
 }
 
 /* Footer */
@@ -160,11 +152,11 @@ a.phone {
   font-weight: 700;
   font-size: 26px;
   letter-spacing: 0.03em;
-  color: var(--button-color);
+  color: #ffffff;
 }
 
 .cont-footer {
-  background-color: var(--title-text-color);
+  background-color: #212121;
 }
 
 .location {
@@ -173,5 +165,5 @@ a.phone {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  color: var(--button-color);
+  color: #fff;
 }
