@@ -1,0 +1,151 @@
+:root {
+  --main-font-family: 'Roboto', sans-serif;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --button-color: #ffffff;
+  --fill-color: #afb1b8;
+}
+/* BODY */
+body {
+  font-family: var(--main-font-family);
+  color: var(--title-text-color);
+}
+
+/* HEADER */
+
+.logo > a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+
+.span-logo {
+  font-family: var(--accent-color);
+  color: var(--accent-color);
+}
+/* nav_menu  */
+
+.nav_menu li {
+  display: inline-block;
+  font-family: var(--main-font-family);
+  line-height: 1.14;
+  font-size: 14px;
+  color: var(--main-title-color);
+  letter-spacing: 0.02em;
+  font-weight: 500;
+}
+
+.nav_menu li:hover,
+.nav_menu li:focus {
+  color: var(--main-hover-color);
+  cursor: pointer;
+}
+/* MAIN */
+
+button.radio {
+  border-radius: 4px;
+  width: 73px;
+  height: 38px;
+  background: #f5f4fa;
+}
+
+.filter > li:nth-child(2) > button {
+  width: 125px;
+}
+
+.filter > li:nth-child(3) > button {
+  width: 112px;
+}
+
+.filter > li:nth-child(4) > button {
+  width: 103px;
+}
+
+.filter > li:nth-child(5) > button {
+  width: 130px;
+}
+
+.filter > li:nth-child() .radio {
+  font-family: var(--main-font-family);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  line-height: 162%;
+  text-align: center;
+  color: var(--title-text-color);
+  padding: 6px 22px;
+}
+
+.ul-img-projects > li > h3 {
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 0.09;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.ul-img-projects > li > p {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 0.08;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+/* FOOTER */
+
+.footer {
+  width: 100%;
+  height: 252px;
+  background-color: #2f303a;
+}
+
+.footer-logo > a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: var(--button-color);
+}
+
+.location {
+  font-family: var(--main-font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--button-color);
+}
+
+/* LINKS */
+
+a.email,
+a.phone {
+  font-family: var(--main-font-family);
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
+a.email:hover {
+  color: var(--accent-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style: none;
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+}
