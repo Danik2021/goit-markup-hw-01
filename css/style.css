@@ -10,6 +10,8 @@
 body {
   font-family: var(--main-font-family);
   color: var(--title-text-color);
+  width: 1600px;
+  outline: 3px solid #b1b1bb1b;
 }
 
 /* Links */
@@ -35,6 +37,19 @@ a.phone {
   color: var(--primary-text-color);
 }
 /* Header */
+
+.header {
+  padding-left: 215px;
+  padding-right: 215px;
+}
+
+.nav_menu .nav_li + .nav_li {
+  margin-left: 50px;
+}
+
+.nav_menu > .nav_li:nth-child(1) {
+  margin-left: 93px;
+}
 
 .nav_menu > li:hover,
 .nav_menu > li:focus {
@@ -79,6 +94,10 @@ a.phone {
 /* Main */
 
 .main-section {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  height: 600px;
+
   background-color: #2f303a;
   text-align: center;
 }
@@ -96,14 +115,16 @@ a.phone {
 
 .main-text {
   width: 696px;
-  font-family: var(--main-font-family);
+  margin: 0px auto 30px auto;
+
   color: var(--button-color);
+
   font-size: 44px;
   line-height: 1.4;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin: 0px;
+  font-family: var(--main-font-family);
 }
 
 .cont-about-us h3 {
@@ -186,4 +207,20 @@ a.phone {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--button-color);
+}
+
+/* Flex */
+
+.container {
+  display: flex;
+  align-items: center;
+  height: 80px;
+}
+
+.header-menu {
+  margin-left: auto;
+}
+
+.header-menu > .link + .link {
+  margin-left: 50px;
 }
