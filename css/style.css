@@ -59,8 +59,10 @@ a.phone {
 
 /* Logo */
 
-.logo {
+.logo,
+.footer-logo {
   margin: 0px;
+  margin-bottom: 20px;
 }
 
 .logo > a {
@@ -104,15 +106,6 @@ a.phone {
 
 /* Text h2 h3  */
 
-.section-block {
-  text-align: center;
-  font-family: var(--main-font-family);
-  font-weight: 700;
-  font-size: 36px;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-}
-
 .main-text {
   width: 696px;
   margin: 0px auto 30px auto;
@@ -127,31 +120,45 @@ a.phone {
   font-family: var(--main-font-family);
 }
 
-.cont-about-us h3 {
-  font-family: var(--main-font-family);
+.paragraph {
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
+
+  font-family: var(--main-font-family);
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+}
+
+.cont-about-us h3 {
+  color: var(--title-text-color);
+
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  font-family: var(--main-font-family);
 }
 
 .cont-employee h3 {
+  color: var(--title-text-color);
+
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--title-text-color);
 }
 
 .section-title h2 {
+  color: var(--title-text-color);
+
   font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  color: var(--title-text-color);
 }
 
 /* Buttons */
@@ -159,8 +166,10 @@ a.phone {
 .button {
   width: 216px;
   height: 50px;
-  background-color: var(--accent-color);
+
   color: var(--button-color);
+
+  background-color: var(--accent-color);
   font-size: 16px;
   font-family: var(--main-font-family);
   border-radius: 4px;
@@ -168,24 +177,35 @@ a.phone {
 }
 
 .cont-about-us p {
+  color: var(--primary-text-color);
+
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
 }
 
 .cont-employee p {
+  color: var(--primary-text-color);
+
+  text-align: center;
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
-  text-align: center;
-  color: var(--primary-text-color);
 }
 
 /* Footer */
+
+.footer {
+  background-color: #2f303a;
+  height: 252px;
+  padding-right: 215px;
+  padding-left: 215px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
 
 .footer-logo > a {
   font-family: 'Raleway', sans-serif;
@@ -194,10 +214,6 @@ a.phone {
   letter-spacing: 0.03em;
   color: var(--button-color);
   text-decoration: none;
-}
-
-.cont-footer {
-  background-color: #2f303a;
 }
 
 .location {
@@ -210,8 +226,9 @@ a.phone {
 }
 
 /* Flex */
+/* Header section */
 
-.container {
+.header > .container {
   display: flex;
   align-items: center;
   height: 80px;
@@ -223,4 +240,80 @@ a.phone {
 
 .header-menu > .link + .link {
   margin-left: 50px;
+}
+
+.section-block {
+  text-align: center;
+  padding-right: 215px;
+  padding-left: 215px;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section-block > ul {
+  display: flex;
+}
+
+.section-block:nth-child(4) {
+  background-color: #f5f4fa;
+}
+
+/* Section cont-about-us */
+
+.cont-about-us > li {
+  text-align: left;
+}
+
+.cont-about-us > li + li {
+  margin-left: 30px;
+}
+
+.cont-about-us > li:nth-child(2) > p {
+  width: 270px;
+}
+
+.cont-about-us > li:nth-child(3) > p {
+  width: 270px;
+}
+
+/* Section our-works */
+
+.ul-img-work {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.ul-img-work > li + li {
+  margin-left: 30px;
+}
+
+/* Section eployee */
+
+.cont-employee {
+  padding: 0;
+  margin: 0;
+}
+
+.cont-employee > li {
+  text-align: center;
+  background-color: var(--button-color);
+  max-width: 270px;
+}
+
+.cont-employee > li > p {
+  padding: 10px 70px 30px 70px;
+  white-space: nowrap;
+}
+
+.cont-employee > li + li {
+  margin-left: 30px;
+}
+
+/* Footer flex */
+
+.footer > .container {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
