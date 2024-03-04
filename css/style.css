@@ -5,13 +5,13 @@
   --accent-color: #2196f3;
   --button-color: #ffffff;
   --fill-color: #afb1b8;
+  --main-font-size: 16px;
 }
 /* Body */
 body {
   font-family: var(--main-font-family);
   color: var(--title-text-color);
   width: 1600px;
-  outline: 3px solid #b1b1bb1b;
 }
 
 /* Links */
@@ -59,8 +59,7 @@ a.phone {
 
 /* Logo */
 
-.logo,
-.footer-logo {
+.logo {
   margin: 0px;
   margin-bottom: 20px;
 }
@@ -72,6 +71,10 @@ a.phone {
   font-size: 26px;
   letter-spacing: 0.03em;
   text-decoration: none;
+}
+
+.footer > .logo > a {
+  color: #ffffff;
 }
 
 .span-logo {
@@ -120,7 +123,7 @@ a.phone {
   font-family: var(--main-font-family);
 }
 
-.paragraph {
+.heading {
   margin-bottom: 50px;
 
   color: var(--title-text-color);
@@ -146,7 +149,7 @@ a.phone {
 
   font-family: var(--main-font-family);
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--main-font-size);
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -170,7 +173,7 @@ a.phone {
   color: var(--button-color);
 
   background-color: var(--accent-color);
-  font-size: 16px;
+  font-size: var(--main-font-size);
   font-family: var(--main-font-family);
   border-radius: 4px;
   border: none;
@@ -192,7 +195,7 @@ a.phone {
   text-align: center;
   font-family: var(--main-font-family);
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--main-font-size);
   letter-spacing: 0.03em;
 }
 
@@ -205,15 +208,6 @@ a.phone {
   padding-left: 215px;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-logo > a {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  letter-spacing: 0.03em;
-  color: var(--button-color);
-  text-decoration: none;
 }
 
 .location {
