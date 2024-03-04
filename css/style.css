@@ -61,6 +61,9 @@ a.phone {
 
 .logo {
   margin: 0px;
+}
+
+.footer > .logo {
   margin-bottom: 20px;
 }
 
