@@ -204,10 +204,7 @@ a.phone {
 .footer {
   background-color: #2f303a;
   height: 252px;
-  padding-right: 215px;
-  padding-left: 215px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding: 60px 215px;
 }
 
 .location {
@@ -238,10 +235,7 @@ a.phone {
 
 .section-block {
   text-align: center;
-  padding-right: 215px;
-  padding-left: 215px;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 94px 215px;
 }
 
 .section-block > ul {
