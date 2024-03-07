@@ -12,8 +12,13 @@ body {
   font-family: var(--main-font-family);
   color: var(--title-text-color);
   width: 1600px;
+  height: 2346px;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
 /* Links */
 .link {
   text-decoration: none;
@@ -41,18 +46,11 @@ a.phone {
 .header {
   padding-left: 215px;
   padding-right: 215px;
+  border-bottom: 1px solid var(--button-color);
 }
 
-.nav_menu .nav_li + .nav_li {
-  margin-left: 50px;
-}
-
-.nav_menu > .nav_li:nth-child(1) {
-  margin-left: 93px;
-}
-
-.nav_menu > li:hover,
-.nav_menu > li:focus {
+.nav-menu > li:hover,
+.nav-menu > li:focus {
   color: var(--accent-color);
   cursor: pointer;
 }
@@ -63,7 +61,7 @@ a.phone {
   margin: 0px;
 }
 
-.footer > .logo {
+.footer > .container > .logo {
   margin-bottom: 20px;
 }
 
@@ -85,11 +83,14 @@ a.phone {
 }
 /* nav_menu  */
 
-.nav_menu {
-  margin: 0px;
+.nav-menu {
+  margin-left: 93px;
+  display: flex;
+  min-width: 281px;
+  justify-content: space-between;
 }
 
-.nav_menu li {
+.nav-menu li {
   display: inline-block;
   font-family: var(--main-font-family);
   line-height: 1.14;
@@ -104,7 +105,6 @@ a.phone {
 .main-section {
   padding-top: 200px;
   padding-bottom: 200px;
-  height: 600px;
 
   background-color: #2f303a;
   text-align: center;
@@ -127,8 +127,8 @@ a.phone {
 }
 
 .heading {
+  margin: 0px;
   margin-bottom: 50px;
-
   color: var(--title-text-color);
 
   font-family: var(--main-font-family);
@@ -182,6 +182,11 @@ a.phone {
   border: none;
 }
 
+.cont-about-us {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .cont-about-us p {
   color: var(--primary-text-color);
 
@@ -221,6 +226,10 @@ a.phone {
 
 /* Flex */
 /* Header section */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .header > .container {
   display: flex;
@@ -273,6 +282,7 @@ a.phone {
   display: flex;
   margin: 0px;
   padding: 0px;
+  justify-content: space-evenly;
 }
 
 .ul-img-work > li + li {
@@ -284,6 +294,8 @@ a.phone {
 .cont-employee {
   padding: 0;
   margin: 0;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .cont-employee > li {
@@ -303,7 +315,7 @@ a.phone {
 
 /* Footer flex */
 
-.footer > .container {
+.container-footer {
   display: flex;
   flex-direction: column;
   gap: 9px;
