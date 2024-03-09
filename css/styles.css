@@ -11,8 +11,12 @@
 body {
   font-family: var(--main-font-family);
   color: var(--title-text-color);
-  width: 1600px;
-  height: 2346px;
+}
+
+h1,
+h2 {
+  margin: 0px;
+  padding: 0px;
 }
 
 ul {
@@ -57,10 +61,6 @@ a.phone {
 
 /* Logo */
 
-.logo {
-  margin: 0px;
-}
-
 .footer > .container > .logo {
   margin-bottom: 20px;
 }
@@ -74,7 +74,7 @@ a.phone {
   text-decoration: none;
 }
 
-.footer > .logo > a {
+.footer > .container > .logo > a {
   color: #ffffff;
 }
 
