@@ -75,7 +75,7 @@ a.phone {
 }
 
 .footer > .container > .logo > a {
-  color: #ffffff;
+  color: var(--button-color);
 }
 
 .span-logo {
