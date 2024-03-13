@@ -245,9 +245,12 @@ a.phone {
   margin-left: 50px;
 }
 
+.section {
+  padding: 94px 215px;
+}
+
 .section-block {
   text-align: center;
-  padding: 94px 215px;
 }
 
 .section-block > ul {
