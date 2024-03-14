@@ -108,6 +108,10 @@ button.radio {
   margin-bottom: 50px;
 }
 
+.filter > li {
+  list-style: none;
+}
+
 .filter > li:nth-child(2) > button {
   width: 125px;
 }
@@ -216,7 +220,7 @@ a.phone {
   color: var(--primary-text-color);
 }
 
-.link {
+a {
   text-decoration: none;
 }
 
@@ -231,8 +235,8 @@ a.phone {
 
 /* hover */
 
-.link:hover,
-.link:focus {
+a:hover,
+a:focus {
   color: var(--accent-color);
 }
 

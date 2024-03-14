@@ -23,18 +23,19 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+ul > li {
+  list-style: none;
+}
+
 /* Links */
-.link {
+a {
   text-decoration: none;
 }
 
-.link:hover,
-.link:focus {
+a:hover,
+a:focus {
   color: var(--accent-color);
-}
-
-.list {
-  list-style: none;
 }
 
 a.email,
@@ -241,7 +242,7 @@ a.phone {
   margin-left: auto;
 }
 
-.header-menu > .link + .link {
+.header-menu > a + a {
   margin-left: 50px;
 }
 
@@ -249,15 +250,15 @@ a.phone {
   padding: 94px 215px;
 }
 
-.section-block {
+.section {
   text-align: center;
 }
 
-.section-block > ul {
+.section > ul {
   display: flex;
 }
 
-.section-block:nth-child(4) {
+.section:nth-child(4) {
   background-color: #f5f4fa;
 }
 
