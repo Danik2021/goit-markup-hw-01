@@ -103,12 +103,21 @@ a.phone {
 
 /* Main */
 
-.main-section {
+.overlay {
+  background-image: url('../images/background1.svg');
   padding-top: 200px;
   padding-bottom: 200px;
 
-  background-color: #2f303a;
-  text-align: center;
+  width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.svg {
+  fill: #363636;
+  width: 100px;
+  height: 100px;
 }
 
 /* Text h2 h3  */
@@ -246,7 +255,7 @@ a.phone {
   margin-left: 50px;
 }
 
-.section {
+.section:not(:first-child) {
   padding: 94px 215px;
 }
 
