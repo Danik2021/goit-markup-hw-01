@@ -46,6 +46,18 @@ a.phone {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
+
+a.email::before {
+  background-image: url('../images/icons.svg#letter');
+  width: 32px;
+  height: 32px;
+}
+
+a.phone::before {
+  background-image: url('../images/icons.svg#phone');
+  width: 32px;
+  height: 32px;
+}
 /* Header */
 
 .header {
@@ -104,14 +116,13 @@ a.phone {
 /* Main */
 
 .overlay {
-  background-image: url('../images/background1.svg');
   padding-top: 200px;
   padding-bottom: 200px;
-
-  width: 1600px;
+  background-image: linear-gradient(to right, rgb(47, 48, 58, 0.4), rgb(47, 48, 58, 0.4)),
+    url('../images/background.jpeg');
+  max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-  position: relative;
 }
 
 .svg {
@@ -275,6 +286,34 @@ a.phone {
 
 .cont-about-us > li {
   text-align: left;
+}
+
+.cont-about-us > li::before:nth-child(1) {
+  display: block;
+  background-image: url(../images/icons.svg#antenna);
+  width: 32px;
+  height: 32px;
+}
+
+.cont-about-us > li::before:nth-child(2) {
+  display: block;
+  background-image: url(../images/icons.svg#clock);
+  width: 32px;
+  height: 32px;
+}
+
+.cont-about-us > li::before:nth-child(3) {
+  display: block;
+  background-image: url(../images/icons.svg#diagram);
+  width: 32px;
+  height: 32px;
+}
+
+.cont-about-us > li::before:nth-child(4) {
+  display: block;
+  background-image: url(../images/icons.svg#astronaut);
+  width: 32px;
+  height: 32px;
 }
 
 .cont-about-us > li + li {
