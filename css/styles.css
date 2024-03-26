@@ -125,10 +125,13 @@ a.phone::before {
   margin: 0 auto;
 }
 
-.svg {
-  fill: #363636;
-  width: 100px;
-  height: 100px;
+.cont-icons {
+  display: flex;
+}
+
+.cont-icons > svg {
+  width: 20px;
+  height: 20px;
 }
 
 /* Text h2 h3  */
