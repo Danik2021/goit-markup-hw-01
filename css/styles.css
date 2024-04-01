@@ -47,17 +47,6 @@ a.phone {
   color: var(--primary-text-color);
 }
 
-a.email::before {
-  background-image: url('../images/icons.svg#letter');
-  width: 32px;
-  height: 32px;
-}
-
-a.phone::before {
-  background-image: url('../images/icons.svg#phone');
-  width: 32px;
-  height: 32px;
-}
 /* Header */
 
 .header {
@@ -123,15 +112,6 @@ a.phone::before {
   max-width: 1600px;
   height: 600px;
   margin: 0 auto;
-}
-
-.cont-icons {
-  display: flex;
-}
-
-.cont-icons > svg {
-  width: 20px;
-  height: 20px;
 }
 
 /* Text h2 h3  */
@@ -263,9 +243,15 @@ a.phone::before {
 
 .header-menu {
   margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
-.header-menu > a + a {
+.header-menu > a {
+  margin-left: 10px;
+}
+
+.header-menu > a + svg {
   margin-left: 50px;
 }
 
@@ -289,34 +275,6 @@ a.phone::before {
 
 .cont-about-us > li {
   text-align: left;
-}
-
-.cont-about-us > li::before:nth-child(1) {
-  display: block;
-  background-image: url(../images/icons.svg#antenna);
-  width: 32px;
-  height: 32px;
-}
-
-.cont-about-us > li::before:nth-child(2) {
-  display: block;
-  background-image: url(../images/icons.svg#clock);
-  width: 32px;
-  height: 32px;
-}
-
-.cont-about-us > li::before:nth-child(3) {
-  display: block;
-  background-image: url(../images/icons.svg#diagram);
-  width: 32px;
-  height: 32px;
-}
-
-.cont-about-us > li::before:nth-child(4) {
-  display: block;
-  background-image: url(../images/icons.svg#astronaut);
-  width: 32px;
-  height: 32px;
 }
 
 .cont-about-us > li + li {
