@@ -15,7 +15,8 @@ body {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   margin: 0px;
   padding: 0px;
 }
@@ -23,6 +24,10 @@ h2 {
 ul {
   margin: 0;
   padding: 0;
+}
+
+ul li {
+  list-style: none;
 }
 
 address {
@@ -50,6 +55,19 @@ address {
 
 .header-menu {
   margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 333px;
+}
+
+.header-menu > div {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.header-menu > div > svg {
+  margin-right: 10px;
 }
 
 .logo > a {
@@ -99,7 +117,7 @@ button.radio {
   border-radius: 4px;
   width: 73px;
   height: 38px;
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 
 .filter {
@@ -186,6 +204,11 @@ button.radio {
   padding: 60px 215px;
 }
 
+.footer > .container {
+  display: flex;
+  column-gap: 70px;
+}
+
 .location {
   font-family: var(--main-font-family);
   font-weight: 400;
@@ -195,18 +218,55 @@ button.radio {
   color: var(--button-color);
 }
 
-.footer > .container > .logo > a {
-  color: var(--button-color);
-}
-
-.footer > .container > .logo {
-  margin-bottom: 20px;
-}
-
 .container-footer {
   display: flex;
   flex-direction: column;
   gap: 9px;
+}
+
+.container-footer > .logo {
+  margin-bottom: calc(20px - 9px);
+}
+
+.container-footer > .logo > a {
+  color: var(--button-color);
+}
+
+.add-icons {
+  display: flex;
+  column-gap: 10px;
+}
+
+.add-icons > li > .back-social > svg g {
+  fill: var(--button-color);
+}
+
+.add-icons > li > .back-social {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: #44454e;
+  border-radius: 50%;
+  padding: 12px 12px;
+}
+
+.add-icons > li:nth-child(2) > .back-social {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  padding: 12px 12px;
+}
+
+.cont-add > h3 {
+  color: var(--button-color);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  font-family: var(--main-font-family);
+  margin-bottom: 30px;
 }
 
 /* LINKS */
@@ -235,17 +295,28 @@ a {
 
 /* hover */
 
-a:hover,
-a:focus {
-  color: var(--accent-color);
-}
-
 .nav-menu li:hover,
 .nav-menu li:focus {
   color: var(--main-hover-color);
   cursor: pointer;
 }
 
-a.email:hover {
+.header-menu > div > .phone:hover,
+.header-menu > div > .email:hover {
   color: var(--accent-color);
+}
+
+.header-menu > div > .email:focus,
+.header-menu > div > .phone:focus {
+  color: var(--accent-color);
+}
+
+.header-menu > div > .phone:hover + svg path,
+.header-menu > div > .email:hover + svg path {
+  fill: var(--accent-color);
+}
+
+.radio:hover {
+  background-color: var(--accent-color);
+  color: var(--button-color);
 }
