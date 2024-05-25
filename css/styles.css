@@ -7,6 +7,7 @@
   --fill-color: #afb1b8;
   --main-font-size: 16px;
 }
+
 /* Body */
 body {
   font-family: var(--main-font-family);
@@ -30,7 +31,7 @@ ul {
   padding: 0;
 }
 
-ul > li {
+ul>li {
   list-style: none;
 }
 
@@ -61,25 +62,25 @@ a.phone {
   border-bottom: 1px solid var(--button-color);
 }
 
-.nav-menu > li:hover,
-.nav-menu > li:focus {
+.nav-menu>li:hover,
+.nav-menu>li:focus {
   color: var(--accent-color);
   cursor: pointer;
 }
 
-.header-menu > div > .email:hover,
-.header-menu > div > .phone:hover {
+.header-menu>div>.email:hover,
+.header-menu>div>.phone:hover {
   color: var(--accent-color);
 }
 
-.header-menu > div > .email:hover + svg path,
-.header-menu > div > .phone:hover + svg path {
+.header-menu>div>.email:hover+svg path,
+.header-menu>div>.phone:hover+svg path {
   fill: var(--accent-color);
 }
 
 /* Logo */
 
-.logo > a {
+.logo>a {
   color: #000000;
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -91,6 +92,7 @@ a.phone {
 .span-logo {
   color: var(--accent-color);
 }
+
 /* nav_menu  */
 
 .nav-menu {
@@ -239,7 +241,7 @@ a.phone {
   margin: 0 auto;
 }
 
-.header > .container {
+.header>.container {
   display: flex;
   align-items: center;
   height: 80px;
@@ -252,7 +254,7 @@ a.phone {
   width: 333px;
 }
 
-.header-menu > div {
+.header-menu>div {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
@@ -270,7 +272,7 @@ a.phone {
   text-align: center;
 }
 
-.section > ul {
+.section>ul {
   display: flex;
 }
 
@@ -280,15 +282,15 @@ a.phone {
 
 /* Section cont-about-us */
 
-.cont-about-us > li {
+.cont-about-us>li {
   text-align: left;
 }
 
-.cont-about-us > li:nth-child(2) > p {
+.cont-about-us>li:nth-child(2)>p {
   width: 270px;
 }
 
-.cont-about-us > li:nth-child(3) > p {
+.cont-about-us>li:nth-child(3)>p {
   width: 270px;
 }
 
@@ -310,7 +312,7 @@ a.phone {
   justify-content: space-evenly;
 }
 
-.ul-img-work > li + li {
+.ul-img-work>li+li {
   margin-left: 30px;
 }
 
@@ -324,18 +326,18 @@ a.phone {
   column-gap: 30px;
 }
 
-.cont-employee > li {
+.cont-employee>li {
   text-align: center;
   background-color: var(--button-color);
   max-width: 270px;
 }
 
-.cont-employee > li > p {
+.cont-employee>li>p {
   padding: 10px 70px 16px 70px;
   white-space: nowrap;
 }
 
-.cont-employee > li > img {
+.cont-employee>li>img {
   margin-bottom: 30px;
 }
 
@@ -346,7 +348,7 @@ a.phone {
   margin-bottom: 30px;
 }
 
-.cont-icons > li > .back-social {
+.cont-icons>li>.back-social {
   display: block;
   width: 44px;
   height: 44px;
@@ -355,15 +357,15 @@ a.phone {
   padding: 12px 12px;
 }
 
-.cont-icons > li > .back-social:hover {
+.cont-icons>li>.back-social:hover {
   background-color: #2196f3;
 }
 
-.cont-icons > li > .back-social:hover > svg {
+.cont-icons>li>.back-social:hover>svg {
   fill: #ffffff;
 }
 
-.cont-icons > li > .back-social > svg {
+.cont-icons>li>.back-social>svg {
   fill: #afb1b8;
   width: 20px;
   height: 20px;
@@ -377,7 +379,7 @@ a.phone {
   justify-content: space-evenly;
 }
 
-.cont-clients > li {
+.cont-clients>li {
   width: 170px;
   height: 92px;
 
@@ -388,12 +390,12 @@ a.phone {
   justify-content: center;
 }
 
-.cont-clients > li:hover {
+.cont-clients>li:hover {
   border: 2px solid var(--accent-color);
   fill: var(--accent-color);
 }
 
-.cont-clients > li:hover > svg path {
+.cont-clients>li:hover>svg path {
   fill: inherit;
 }
 
@@ -414,15 +416,15 @@ a.phone {
   color: var(--button-color);
 }
 
-.container-footer > .logo > a {
+.container-footer>.logo>a {
   color: var(--button-color);
 }
 
-.container-footer > .logo {
+.container-footer>.logo {
   margin-bottom: calc(20px - 9px);
 }
 
-.footer > .container {
+.footer>.container {
   display: flex;
   column-gap: 70px;
 }
@@ -438,11 +440,11 @@ a.phone {
   column-gap: 10px;
 }
 
-.add-icons > li > .back-social > svg g {
+.add-icons>li>.back-social>svg g {
   fill: var(--button-color);
 }
 
-.add-icons > li > .back-social {
+.add-icons>li>.back-social {
   display: block;
   width: 44px;
   height: 44px;
@@ -451,7 +453,7 @@ a.phone {
   padding: 12px 12px;
 }
 
-.add-icons > li:nth-child(2) > .back-social {
+.add-icons>li:nth-child(2)>.back-social {
   display: block;
   width: 44px;
   height: 44px;
