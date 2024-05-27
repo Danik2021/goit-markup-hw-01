@@ -68,7 +68,7 @@
           <div class="container">
             <div>
               <h2 class="main-text">Ефективні рішення для вашого бізнесу</h2>
-              <button class="button">Замовити послугу</button>
+              <button class="button" data-modal-open>Замовити послугу</button>
             </div>
           </div>
         </div>
@@ -114,12 +114,15 @@
           <h2 class="heading">Чим ми займаємося</h2>
           <ul class="ul-img-work">
             <li>
+              <div class="label">Десктопні додатки</div>
               <img src="./images/keyboard.jpg" alt="typing on keybord" width="370" height="294" />
             </li>
             <li>
+              <div class="label">Мобільні додатки</div>
               <img src="./images/phone.jpg" alt="writing on the phone" width="370" height="294" />
             </li>
             <li>
+              <div class="label">Дизайнерські рішення</div>
               <img
                 src="./images/tablet.jpg"
                 alt="watching on the tablet"
@@ -570,6 +573,11 @@
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="overlay-button" data-modal-close></button>
+      </div>
+    </div>
   </body>
+  <script src="./js/modal.js"></script>
 </html>
