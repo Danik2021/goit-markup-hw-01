@@ -533,7 +533,7 @@ a.phone {
   transition: transform 500ms ease-in;
 }
 
-.overlay-button {
+.backdrop-button {
   padding: 8px 8px 0 0;
   border: none;
   background-color: transparent;
