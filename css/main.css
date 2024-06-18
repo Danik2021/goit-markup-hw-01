@@ -2,7 +2,7 @@
   --main-font-family: 'Roboto', sans-serif;
   --primary-text-color: #757575;
   --title-text-color: #212121;
-  --accent-color: #2196f3;
+  --accent-color: rgb(33, 150, 243);
   --button-color: #ffffff;
   --fill-color: #afb1b8;
   --main-font-size: 16px;
@@ -48,7 +48,7 @@ address {
   border-bottom: 2px solid #ececec;
 }
 
-.header>.container {
+.header .container {
   display: flex;
   align-items: center;
   height: 80px;
@@ -61,17 +61,17 @@ address {
   width: 333px;
 }
 
-.header-menu>div {
+.header-menu div {
   display: flex;
   align-items: center;
   flex-direction: row-reverse;
 }
 
-.header-menu>div>svg {
+.header-menu div svg {
   margin-right: 10px;
 }
 
-.logo>a {
+.logo a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -108,7 +108,6 @@ address {
   position: relative;
 }
 
-
 .nav-li:nth-child(2)::after {
   content: '';
   position: absolute;
@@ -126,7 +125,7 @@ address {
   padding: 94px 215px;
 }
 
-.main>.container {
+.main .container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,27 +144,27 @@ button.radio {
   margin-bottom: 50px;
 }
 
-.filter>li {
+.filter li {
   list-style: none;
 }
 
-.filter>li:nth-child(2)>button {
+.filter li:nth-child(2) button {
   width: 125px;
 }
 
-.filter>li:nth-child(3)>button {
+.filter li:nth-child(3) button {
   width: 112px;
 }
 
-.filter>li:nth-child(4)>button {
+.filter li:nth-child(4) button {
   width: 103px;
 }
 
-.filter>li:nth-child(5)>button {
+.filter li:nth-child(5) button {
   width: 130px;
 }
 
-.filter>li:nth-child() .radio {
+.filter li:nth-child() .radio {
   font-family: var(--main-font-family);
   font-weight: 500;
   font-size: var(--main-font-size);
@@ -191,8 +190,7 @@ button.radio {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-.ul-img-projects>.list>h3 {
+.ul-img-projects .list h3 {
   font-family: var(--main-font-family);
   font-weight: 700;
   font-size: 18px;
@@ -201,7 +199,7 @@ button.radio {
   color: var(--title-text-color);
 }
 
-.container-projects>p {
+.container-projects p {
   font-family: var(--main-font-family);
   font-weight: 400;
   font-size: var(--main-font-size);
@@ -227,7 +225,7 @@ button.radio {
   padding: 60px 215px;
 }
 
-.footer>.container {
+.footer .container {
   display: flex;
   column-gap: 70px;
 }
@@ -247,11 +245,11 @@ button.radio {
   gap: 9px;
 }
 
-.container-footer>.logo {
+.container-footer .logo {
   margin-bottom: calc(20px - 9px);
 }
 
-.container-footer>.logo>a {
+.container-footer .logo a {
   color: var(--button-color);
 }
 
@@ -260,11 +258,11 @@ button.radio {
   column-gap: 10px;
 }
 
-.add-icons>li>.back-social>svg g {
+.add-icons li .back-social svg g {
   fill: var(--button-color);
 }
 
-.add-icons>li>.back-social {
+.add-icons li .back-social {
   display: block;
   width: 44px;
   height: 44px;
@@ -273,7 +271,7 @@ button.radio {
   padding: 12px 12px;
 }
 
-.add-icons>li:nth-child(2)>.back-social {
+.add-icons li:nth-child(2) .back-social {
   display: block;
   width: 44px;
   height: 44px;
@@ -282,7 +280,7 @@ button.radio {
   padding: 12px 12px;
 }
 
-.cont-add>h3 {
+.cont-add h3 {
   color: var(--button-color);
   font-size: 14px;
   font-weight: 700;
@@ -324,18 +322,18 @@ a {
   cursor: pointer;
 }
 
-.header-menu>div>.phone:hover,
-.header-menu>div>.email:hover {
+.header-menu div .phone:hover,
+.header-menu div .email:hover {
   color: var(--accent-color);
 }
 
-.header-menu>div>.email:focus,
-.header-menu>div>.phone:focus {
+.header-menu div .email:focus,
+.header-menu div .phone:focus {
   color: var(--accent-color);
 }
 
-.header-menu>div>.phone:hover+svg path,
-.header-menu>div>.email:hover+svg path {
+.header-menu div .phone:hover + svg path,
+.header-menu div .email:hover + svg path {
   fill: var(--accent-color);
 }
 
@@ -370,5 +368,6 @@ a {
 }
 
 .ul-img-projects .list:hover {
-  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
