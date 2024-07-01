@@ -68,6 +68,10 @@ a.phone {
   cursor: pointer;
 }
 
+.nav-menu .nav-li a {
+  color: var(--title-text-color);
+}
+
 .header-menu div .email:hover,
 .header-menu div .phone:hover {
   color: var(--accent-color);

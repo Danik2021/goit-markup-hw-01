@@ -108,6 +108,10 @@ address {
   position: relative;
 }
 
+.nav-li a {
+  color: var(--title-text-color);
+}
+
 .nav-li:nth-child(2)::after {
   content: '';
   position: absolute;
