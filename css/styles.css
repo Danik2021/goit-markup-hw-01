@@ -68,6 +68,10 @@ a.phone {
   cursor: pointer;
 }
 
+.nav-menu .nav-li a {
+  color: var(--title-text-color);
+}
+
 .header-menu div .email:hover,
 .header-menu div .phone:hover {
   color: var(--accent-color);
@@ -455,6 +459,12 @@ a.phone {
   color: var(--button-color);
 }
 
+.container-footer .email:hover,
+.container-footer .phone:hover {
+  color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .container-footer .logo {
   margin-bottom: calc(20px - 9px);
 }
@@ -488,13 +498,56 @@ a.phone {
   padding: 12px 12px;
 }
 
-.add-icons li:nth-child(2) .back-social {
-  display: block;
-  width: 44px;
-  height: 44px;
+.add-icons li .back-social:hover {
   background-color: var(--accent-color);
-  border-radius: 50%;
-  padding: 12px 12px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-cont {
+  display: flex;
+  gap: 0 12px;
+}
+
+.form-subscribe h2 {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--button-color);
+  letter-spacing: 0.03em;
+  margin-bottom: 20px;
+}
+
+.subscribe-input {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: var(--button-color);
+  background-color: transparent;
+  width: 358px;
+  height: 58px;
+  font-size: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.subscribe-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 28px;
+  border: none;
+  gap: 0 10px;
+  width: 200px;
+  height: 58px;
+  color: var(--button-color);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  line-height: 30px;
+  background-color: var(--accent-color);
+  cursor: pointer;
+}
+
+.subscribe-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 .backdrop {
@@ -521,15 +574,15 @@ a.phone {
 
 .modal {
   position: relative;
-  text-align: end;
-  padding: 8px 8px 0 0;
-  width: 528px;
-  height: 581px;
+  padding: 8px 8px;
+  width: 536px;
+  height: 589px;
   background-color: var(--button-color);
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 500ms ease-in;
+  text-align: end;
 }
 
 .backdrop-button {
@@ -540,4 +593,140 @@ a.phone {
   width: 30px;
   height: 30px;
   background-image: url(../images/icon/close.svg);
+}
+
+.modal-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 32px;
+}
+
+.form-cont {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 28px;
+  font-size: 12px;
+  color: #757575;
+}
+
+.form-cont {
+  text-align: center;
+}
+
+.form-cont-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 6px;
+}
+
+.label-text {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.label-textarea {
+  text-align: start;
+  margin-bottom: 4px;
+}
+
+.form-svg {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  fill: var(--title-text-color);
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  padding: 11px 12px 11px 38px;
+  cursor: pointer;
+}
+
+.form-input:focus + .label-text,
+.form-input:not(:placeholder-shown) + .label-text {
+  position: absolute;
+  transform: translateY(-15px);
+  top: 0;
+  left: 0;
+}
+
+.form-cont:focus-within .form-svg {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10px;
+  fill: var(--accent-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.textarea {
+  display: block;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.form-privacy {
+  text-decoration: underline;
+  color: var(--accent-color);
+}
+
+.form-submit {
+  display: inline-block;
+  width: 200px;
+  padding: 10px 52px;
+  background-color: var(--accent-color);
+  color: var(--button-color);
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: transparent;
+}
+
+.form-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox {
+  border: 2px solid var(--title-text-color);
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+}
+
+.form-cont-checkbox:focus-within .checkbox {
+  background-image: url(../images/icon/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border: transparent;
 }
