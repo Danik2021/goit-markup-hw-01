@@ -1025,7 +1025,7 @@ a.phone {
   height: 15px;
 }
 
-.form__cont-checkbox:focus-within .checkbox {
+.form__cont--checkbox:focus-within .checkbox {
   background-image: url(../images/icon/check.svg);
   background-size: contain;
   background-origin: border-box;
