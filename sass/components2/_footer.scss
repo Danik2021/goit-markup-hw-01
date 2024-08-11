@@ -69,11 +69,7 @@
 }
 
 .add__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 10px;
-  -moz-column-gap: 10px;
   column-gap: 10px;
 }
 
@@ -84,13 +80,14 @@
   border-radius: 50%;
   padding: 12px 12px;
   background-color: #44454e;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   &:hover svg g {
     fill: $button-color;
   }
   &:hover {
     background-color: #2196f3;
-    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
   }
 
   & svg g {

@@ -17,6 +17,9 @@
   text-align: center;
   background-color: #ffffff;
   max-width: 270px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
   p {
     color: #757575;
     text-align: center;
@@ -42,14 +45,14 @@
   }
 }
 
-.cont-icons {
+.socials {
   display: flex;
   justify-content: center;
   column-gap: 10px;
   margin-bottom: 30px;
 }
 
-.cont-icons li .back-social {
+.socials li .socials__link {
   display: block;
   width: 44px;
   height: 44px;
@@ -58,15 +61,15 @@
   padding: 12px 12px;
 }
 
-.cont-icons li .back-social:hover {
+.socials li .socials__link:hover {
   background-color: #2196f3;
 }
 
-.cont-icons li .back-social:hover svg {
+.socials li .socials__link:hover svg {
   fill: #ffffff;
 }
 
-.cont-icons li .back-social svg {
+.socials li .socials__link svg {
   fill: #afb1b8;
   width: 20px;
   height: 20px;

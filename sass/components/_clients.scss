@@ -1,14 +1,8 @@
 /* Сlients */
 
 .clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-column-gap: 30px;
-  -moz-column-gap: 30px;
   column-gap: 30px;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
   justify-content: space-evenly;
 }
 
@@ -17,12 +11,11 @@
   height: 92px;
   border: 2px solid #afb1b8;
   border-radius: 4px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
   justify-content: center;
   &:hover {
+    cursor: pointer;
     border: 2px solid #2196f3;
     fill: #2196f3;
   }
