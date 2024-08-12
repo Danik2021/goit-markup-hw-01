@@ -395,10 +395,10 @@ a.phone {
   margin-right: 10px;
 }
 
-.nav__menu .nav__li a {
+.nav__menu .nav__item a {
   color: #212121;
 }
-.nav__menu .nav__li a:hover, .nav__menu .nav__li a:focus {
+.nav__menu .nav__item a:hover, .nav__menu .nav__item a:focus {
   cursor: pointer;
   color: #2196f3;
 }
@@ -439,7 +439,7 @@ a.phone {
   justify-content: space-between;
 }
 
-.nav__menu .nav__li {
+.nav__menu .nav__item {
   display: inline-block;
   font-family: "Roboto", sans-serif;
   line-height: 1.14;
@@ -449,14 +449,14 @@ a.phone {
   font-weight: 500;
 }
 
-.nav__li {
+.nav__item {
   position: relative;
 }
 
-.nav__li:nth-child(2) a {
+.nav__item:nth-child(2) a {
   color: #2196f3;
 }
-.nav__li:nth-child(2) ::after {
+.nav__item:nth-child(2) ::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -587,7 +587,7 @@ a.phone {
           justify-content: space-between;
 }
 
-.projects__cont {
+.projects__container {
   padding: 20px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -600,7 +600,7 @@ a.phone {
   border: 2px solid #eeeeee;
   border-top: none;
 }
-.projects__cont h3 {
+.projects__container h3 {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -608,7 +608,7 @@ a.phone {
   letter-spacing: 0.06em;
   color: #212121;
 }
-.projects__cont p {
+.projects__container p {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -676,7 +676,7 @@ a.phone {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.add__title {
+.footer__social-title {
   margin-bottom: 20px;
   font-weight: 700;
   text-transform: uppercase;
@@ -684,7 +684,7 @@ a.phone {
   font-size: 14px;
 }
 
-.add__list {
+.footer__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -693,7 +693,7 @@ a.phone {
           column-gap: 10px;
 }
 
-.add__back {
+.footer__social-item {
   display: block;
   width: 44px;
   height: 44px;
@@ -703,14 +703,14 @@ a.phone {
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.add__back:hover svg g {
+.footer__social-item:hover svg g {
   fill: #ffffff;
 }
-.add__back:hover {
+.footer__social-item:hover {
   background-color: #2196f3;
   cursor: pointer;
 }
-.add__back svg g {
+.footer__social-item svg g {
   fill: #ffffff;
 }
 

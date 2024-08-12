@@ -43,7 +43,7 @@
   margin-right: 10px;
 }
 
-.nav__menu .nav__li a {
+.nav__menu .nav__item a {
   color: #212121;
   &:hover,
   &:focus {
@@ -89,7 +89,7 @@
   justify-content: space-between;
 }
 
-.nav__menu .nav__li {
+.nav__menu .nav__item {
   display: inline-block;
   font-family: 'Roboto', sans-serif;
   line-height: 1.14;
@@ -99,11 +99,11 @@
   font-weight: 500;
 }
 
-.nav__li {
+.nav__item {
   position: relative;
 }
 
-.nav__li:nth-child(2) {
+.nav__item:nth-child(2) {
   a {
     color: $accent-color;
   }
