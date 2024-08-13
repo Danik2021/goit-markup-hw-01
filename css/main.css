@@ -352,8 +352,6 @@ a.phone {
 
 /* Header */
 .header {
-  padding-left: 215px;
-  padding-right: 215px;
   border-bottom: 1px solid #afb1b8;
 }
 
@@ -362,8 +360,8 @@ a.phone {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 80px;
 }
 
@@ -373,8 +371,8 @@ a.phone {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 333px;
 }
 
@@ -383,12 +381,12 @@ a.phone {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
 
 .header__icon {
@@ -423,7 +421,7 @@ a.phone {
   text-decoration: none;
 }
 
-.span-logo {
+.header__span {
   color: #2196f3;
 }
 
@@ -435,8 +433,8 @@ a.phone {
   display: flex;
   min-width: 281px;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav__menu .nav__item {
@@ -488,6 +486,8 @@ a.phone {
 .radio:hover {
   background-color: #2196f3;
   color: #ffffff;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects__overlay {
@@ -500,13 +500,13 @@ a.phone {
 .projects__card {
   position: absolute;
   padding: 63px 24px;
-  background-color: rgba(33, 150, 243, 0.9);
+  background-color: #2196f3;
   width: 100%;
   height: 100%;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: #ffffff;
   -webkit-transform: translateY(100%);
       -ms-transform: translateY(100%);
           transform: translateY(100%);
@@ -628,8 +628,8 @@ a.phone {
   display: -ms-flexbox;
   display: flex;
   -webkit-column-gap: 70px;
-  -moz-column-gap: 70px;
-  column-gap: 70px;
+     -moz-column-gap: 70px;
+          column-gap: 70px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -705,13 +705,19 @@ a.phone {
 }
 .footer__social-item:hover svg g {
   fill: #ffffff;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer__social-item:hover {
   background-color: #2196f3;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .footer__social-item svg g {
   fill: #ffffff;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-subscribe h2 {
@@ -766,7 +772,7 @@ a.phone {
   width: 24px;
   height: 24px;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
 }
 
 .form {
@@ -775,8 +781,8 @@ a.phone {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 0px 32px;
 }
 
@@ -798,14 +804,14 @@ a.phone {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: 6px;
-  -moz-column-gap: 6px;
-  column-gap: 6px;
+     -moz-column-gap: 6px;
+          column-gap: 6px;
 }
 
 .label-text {
@@ -813,8 +819,8 @@ a.phone {
   left: 40px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 .label-textarea {
@@ -827,8 +833,8 @@ a.phone {
   left: 10px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   display: inline-block;
   width: 18px;
   height: 18px;
@@ -852,7 +858,7 @@ a.phone {
 .form-input:not(:-ms-input-placeholder) + .label-text {
   position: absolute;
   -ms-transform: translateY(-15px);
-  transform: translateY(-15px);
+      transform: translateY(-15px);
   top: 0;
   left: 0;
 }
@@ -861,8 +867,8 @@ a.phone {
 .form-input:not(:placeholder-shown) + .label-text {
   position: absolute;
   -webkit-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
-  transform: translateY(-15px);
+      -ms-transform: translateY(-15px);
+          transform: translateY(-15px);
   top: 0;
   left: 0;
 }
@@ -870,8 +876,8 @@ a.phone {
 .form__cont:focus-within .form-svg {
   position: absolute;
   -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   top: 50%;
   left: 10px;
   fill: #2196f3;

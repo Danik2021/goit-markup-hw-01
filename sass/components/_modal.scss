@@ -25,7 +25,7 @@
   padding: 8px 8px;
   width: 536px;
   height: 589px;
-  background-color: #ffffff;
+  background-color: $button-color;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) scale(1);
@@ -33,7 +33,7 @@
   text-align: end;
 }
 
-.backdrop-button {
+.backdrop__button {
   padding: 8px 8px 0 0;
   border: none;
   background-color: transparent;

@@ -19,7 +19,7 @@
   <header class="header">
     <div class="header__container">
       <h1 class="logo">
-        <a href="./index.html"> <span class="span-logo header__span">Web</span>Studio</a>
+        <a href="./index.html"> <span class="header__span">Web</span>Studio</a>
       </h1>
       <nav class="nav">
         <ul class="nav__menu">
@@ -50,15 +50,12 @@
       </div>
     </div>
   </header>
-  <!-- new -->
   <main>
     <section class="order-section section">
       <div class="overlay">
-        <div class="container">
-          <div class="order__container">
-            <h2 class="order-text">Ефективні рішення для вашого бізнесу</h2>
-            <button class="order__button" data-modal-open>Замовити послугу</button>
-          </div>
+        <div class="order__container container">
+          <h2 class="order-text">Ефективні рішення для вашого бізнесу</h2>
+          <button class="order__button" data-modal-open>Замовити послугу</button>
         </div>
       </div>
     </section>
@@ -103,15 +100,15 @@
         <h2 class="heading">Чим ми займаємося</h2>
         <ul class="what__img-works">
           <li>
-            <div class="what-label">Десктопні додатки</div>
+            <div class="what__label">Десктопні додатки</div>
             <img src="./images/keyboard.jpg" alt="typing on keybord" width="370" height="294" />
           </li>
           <li>
-            <div class="what-label">Мобільні додатки</div>
+            <div class="what__label">Мобільні додатки</div>
             <img src="./images/phone.jpg" alt="writing on the phone" width="370" height="294" />
           </li>
           <li>
-            <div class="what-label">Дизайнерські рішення</div>
+            <div class="what__label">Дизайнерські рішення</div>
             <img src="./images/tablet.jpg" alt="watching on the tablet" width="370" height="294" />
           </li>
         </ul>
@@ -472,7 +469,7 @@
       </div>
 
       <div class="footer-social">
-        <h3 class="footer__social-title ">Приєднуйтесь</h3>
+        <h3 class="footer__social-title">Приєднуйтесь</h3>
         <ul class="footer__social-list">
           <li class="footer__social-item">
             <a href="#">
@@ -539,14 +536,13 @@
         </ul>
       </div>
 
-      <form class="form-subscribe">
+      <form class="subscribe">
         <h2>Підпишіться на розсилку</h2>
-        <div class="form__subscribe-cont subscribe__cont">
-          <input class="form__subscribe-input subscribe__input" type="email" name="email" id="email"
-            placeholder="E-mail" />
-          <button type="submit" class="form__subscribe-button subscribe__button">
+        <div class="subscribe__cont">
+          <input class="subscribe__input" type="email" name="email" id="email" placeholder="E-mail" />
+          <button type="submit" class=" subscribe__button">
             Підписатися
-            <svg class="form__subscribe-icon subscribe__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            <svg class="subscribe__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
@@ -560,8 +556,8 @@
   <!-- is-hidden -->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
-      <button class="backdrop-button" data-modal-close></button>
-      <h2 class="modal__title modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+      <button class="backdrop__button" data-modal-close></button>
+      <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
       <form class="form" autocomplete="off">
         <label class="form__input-label">
           <input class="form__input" type="text" name="name" placeholder=" " />
@@ -616,8 +612,8 @@
           </span>
         </label>
 
-        <label class="comment-field-label label-textarea" for="textarea">Коментар</label>
-        <textarea class="comment-field textarea" id="textarea" placeholder="Введіть текст"></textarea>
+        <label class="comment-field-label" for="textarea">Коментар</label>
+        <textarea class="comment-field" id="textarea" placeholder="Введіть текст"></textarea>
         <div class="form__container-label">
           <label class="form__container--checkbox">
             <span class="checkbox-label"></span>

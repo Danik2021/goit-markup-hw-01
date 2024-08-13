@@ -2,6 +2,8 @@
   &:hover {
     background-color: $accent-color;
     color: $button-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
@@ -15,13 +17,13 @@
 .projects__card {
   position: absolute;
   padding: 63px 24px;
-  background-color: rgb(33, 150, 243, 0.9);
+  background-color: $accent-color;
   width: 100%;
   height: 100%;
   font-size: 18px;
   line-height: 1.5;
   letter-spacing: 0.03em;
-  color: #fff;
+  color: $button-color;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

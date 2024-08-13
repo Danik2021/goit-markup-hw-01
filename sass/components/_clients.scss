@@ -9,15 +9,15 @@
 .clients__item {
   width: 170px;
   height: 92px;
-  border: 2px solid #afb1b8;
+  border: 2px solid $fill-color;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   &:hover {
     cursor: pointer;
-    border: 2px solid #2196f3;
-    fill: #2196f3;
+    border: 2px solid $accent-color;
+    fill: $accent-color;
   }
   &:hover svg path {
     fill: inherit;

@@ -1,22 +1,20 @@
 // Form
 
-.form-subscribe h2 {
+.subscribe h2 {
   font-weight: 700;
   text-transform: uppercase;
-  color: #ffffff;
+  color: $button-color;
   letter-spacing: 0.03em;
   margin-bottom: 20px;
 }
 
 .subscribe__cont {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0 12px;
 
   .subscribe__input {
     border: 1px solid rgba(255, 255, 255, 0.3);
-    color: #ffffff;
+    color: $button-color;
     background-color: transparent;
     width: 358px;
     height: 58px;
@@ -35,11 +33,11 @@
     gap: 0 10px;
     width: 200px;
     height: 58px;
-    color: #ffffff;
+    color: $button-color;
     font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 30px;
-    background-color: #2196f3;
+    background-color: $accent-color;
     cursor: pointer;
     border-radius: 4px;
   }
@@ -47,18 +45,12 @@
   .subscribe__icon {
     width: 24px;
     height: 24px;
-    -o-object-fit: contain;
     object-fit: contain;
   }
 }
 
 .form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding: 0px 32px;
 }
@@ -69,7 +61,7 @@
   width: 100%;
   margin-bottom: 28px;
   font-size: 12px;
-  color: #757575;
+  color: $primary-text-color;
   text-align: center;
 }
 
@@ -103,6 +95,7 @@
   text-align: start;
   color: $primary-text-color;
   margin-bottom: 4px;
+  font-size: 12px;
 }
 
 .form__icon {
@@ -113,7 +106,7 @@
   display: inline-block;
   width: 18px;
   height: 18px;
-  fill: #212121;
+  fill: $title-text-color;
 }
 
 .form__input {
@@ -132,7 +125,6 @@
 
 .form__input:not(:-ms-input-placeholder) + .form__input-text {
   position: absolute;
-  -ms-transform: translateY(-15px);
   transform: translateY(-15px);
   top: 0;
   left: 0;
@@ -141,8 +133,6 @@
 .form__input:focus + .form__input-text,
 .form__input:not(:placeholder-shown) + .form__input-text {
   position: absolute;
-  -webkit-transform: translateY(-15px);
-  -ms-transform: translateY(-15px);
   transform: translateY(-15px);
   top: 0;
   left: 0;
@@ -150,13 +140,10 @@
 
 .form__input-label:focus-within .form__icon {
   position: absolute;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   top: 50%;
   left: 10px;
-  fill: #2196f3;
-  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: $accent-color;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -172,14 +159,14 @@
 
 .form-privacy {
   text-decoration: underline;
-  color: #2196f3;
+  color: $accent-color;
 }
 
 .form-submit {
   display: inline-block;
   width: 200px;
   padding: 10px 52px;
-  background-color: #2196f3;
+  background-color: $accent-color;
   color: #ffffff;
   font-weight: 700;
   line-height: 30px;
@@ -204,13 +191,14 @@
 }
 
 .checkbox-label {
-  border: 2px solid #212121;
+  border: 2px solid $title-text-color;
   display: inline-block;
   width: 16px;
   height: 15px;
+  border-radius: 1px;
 }
 
-.form__container--checkbox:focus-within .checkbox {
+.form__container--checkbox:focus-within .checkbox-label {
   background-image: url(../images/icon/check.svg);
   background-size: contain;
   background-origin: border-box;

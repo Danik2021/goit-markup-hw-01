@@ -1,28 +1,19 @@
 /* Section our-works */
 .what__img-works {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 0px;
   padding: 0px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
   justify-content: space-between;
 }
 
 .what__img-works li {
   position: relative;
+  max-height: 294px;
 }
 
-.what-label {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.what__label {
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   width: 100%;
@@ -32,6 +23,6 @@
   background-color: rgba(47, 48, 58, 0.8);
   font-weight: 700;
   text-transform: uppercase;
-  color: #ffffff;
-  font-size: 14px;
+  color: $button-color;
+  font-size: $secondary-font-size;
 }
