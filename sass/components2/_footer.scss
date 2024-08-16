@@ -1,0 +1,94 @@
+/* Footer */
+
+.footer {
+  background-color: #2f303a;
+  height: 252px;
+  padding: 60px 215px;
+  .container {
+    display: flex;
+    column-gap: 70px;
+    justify-content: center;
+  }
+}
+
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  max-width: 231px;
+  row-gap: 9px;
+
+  .location {
+    width: 231px;
+  }
+
+  .logo {
+    margin-bottom: 11px;
+  }
+
+  .logo--light a {
+    color: $button-color;
+  }
+
+  .location {
+    font-family: $main-font-family;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: $button-color;
+  }
+
+  .email,
+  .phone {
+    &:hover {
+      color: $accent-color;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  .email,
+  .phone {
+    &:footer {
+      color: $accent-color;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+.footer__social-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $button-color;
+  font-size: 14px;
+}
+
+.footer__social-list {
+  display: flex;
+  column-gap: 10px;
+}
+
+.footer__social-item {
+  display: block;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 12px 12px;
+  background-color: #44454e;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover svg g {
+    fill: $button-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover {
+    background-color: $accent-color;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+
+  & svg g {
+    fill: $button-color;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

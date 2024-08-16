@@ -12,34 +12,34 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
     integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/main.min.css" />
 </head>
 
 <body>
   <header class="header">
-    <div class="container">
+    <div class="header__container container">
       <h1 class="logo">
-        <a href="./index.html"> <span class="span-logo">Web</span>Studio</a>
+        <a href="./index.html"> <span class="logo__accent">Web</span>Studio</a>
       </h1>
-      <nav>
-        <ul class="nav-menu list">
-           <li class="nav-li"><a href="./index.html">Студія</a></li>
-            <li class="nav-li"><a href="./portfolio.html">Портфоліо</a></li>
-            <li class="nav-li"><a href="#">Контакти</a></li>
+      <nav class="nav">
+        <ul class="nav__menu">
+          <li class="nav__item"><a href="./index.html">Студія</a></li>
+          <li class="nav__item"><a href="./portfolio.html">Портфоліо</a></li>
+          <li class="nav__item"><a href="#">Контакти</a></li>
         </ul>
       </nav>
-      <div class="header-menu">
+      <div class="header__menu">
         <div>
-          <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          <svg width="16" height="12" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="email header__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <svg class="header__icon" width="16" height="12" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M14.5 0h-13C.673 0 0 .673 0 1.5v9c0 .827.673 1.5 1.5 1.5h13c.827 0 1.5-.673 1.5-1.5v-9c0-.827-.673-1.5-1.5-1.5Zm0 1c.068 0 .133.014.192.039L8 6.839l-6.692-5.8A.498.498 0 0 1 1.5 1h13Zm0 10h-13a.5.5 0 0 1-.5-.5V2.095l6.672 5.783a.5.5 0 0 0 .656 0L15 2.095V10.5a.5.5 0 0 1-.5.5Z"
               fill="#757575" />
           </svg>
         </div>
         <div>
-          <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
-          <svg width="10" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <a class="phone header__phone" href="tel:+380961111111">+38 096 111 11 11</a>
+          <svg class="header__icon" width="10" height="16" xmlns="http://www.w3.org/2000/svg">
             <path
               d="M8.5 0h-7C.673 0 0 .673 0 1.5v13c0 .827.673 1.5 1.5 1.5h7c.827 0 1.5-.673 1.5-1.5v-13C10 .673 9.327 0 8.5 0Zm-7 1h7a.5.5 0 0 1 .5.5V12H1V1.5a.5.5 0 0 1 .5-.5Zm7 14h-7a.5.5 0 0 1-.5-.5V13h8v1.5a.5.5 0 0 1-.5.5Z"
               fill="#757575" />
@@ -51,115 +51,123 @@
     </div>
   </header>
   <main class="main">
-    <article class="container">
-      <ul class="filter">
+    <article class="container projects">
+      <ul class="projects__filter">
         <li><button type="button" class="radio button">Усі</button></li>
         <li><button type="button" class="radio button">Веб-сайти</button></li>
         <li><button type="button" class="radio button">Додатки</button></li>
         <li><button type="button" class="radio button">Дизайн</button></li>
         <li><button type="button" class="radio button">Маркетинг</button></li>
       </ul>
-      <ul class="ul-img-projects">
-        <li class="list">
-          <div class="cont-overlay">
-            <div class="overlay-card">
+      <ul class="projects__list">
+        <li class="projects__item">
+          <div class="projects__overlay">
+            <div class="projects__card">
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
             <img src="./images/texnokryak.jpg" alt="texnokryak" width="370" height="294" />
           </div>
-          <div class="container-projects">
+          <div class="projects__container">
             <h3>Технокряк</h3>
             <p>Веб-сайт</p>
           </div>
         </li>
-        <li class="list">
-          <div class="cont-overlay">
-            <div class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+        <li class="projects__item">
+          <div class="projects__overlay">
+            <div class="projects__card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+              Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
             <img src="./images/billboard.jpg" alt="billboard" width="370" height="294" />
           </div>
-          <div class="container-projects">
+          <div class="projects__container">
             <h3>Постер New Orlean vs Golden Star</h3>
             <p>Дизайн</p>
           </div>
         </li>
-        <li class="list">
-          <div class="cont-overlay">
-            <div class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+        <li class="projects__item">
+          <div class="projects__overlay">
+            <div class="projects__card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+              Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
             <img src="./images/restaurant.jpg" alt="restaurant" width="370" height="294" />
           </div>
-          <div class="container-projects">
+          <div class="projects__container">
             <h3>Ресторан Seafood</h3>
             <p>Додаток</p>
           </div>
         </li>
-        <li class="list">
-          <div class="cont-overlay">
-            <div class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+        <li class="projects__item">
+          <div class="projects__overlay">
+            <div class="projects__card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+              Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
             <img src="./images/headphones.jpg" alt="headphones" width="370" height="294" />
           </div>
-          <div class="container-projects">
+          <div class="projects__container">
             <h3>Проєкт Prime</h3>
             <p>Маркетинг</p>
         </li>
-        <li class="list">
-          <div class="cont-overlay">
-            <div class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+        <li class="projects__item">
+          <div class="projects__overlay">
+            <div class="projects__card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+              Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
             <img src="./images/boxes.jpg" alt="boxes" width="370" height="294" />
           </div>
-          <div class="container-projects">
+          <div class="projects__container">
             <h3>Проєкт Boxes</h3>
             <p>Додаток</p>
         </li>
-        <li class="list">
-          <div class="cont-overlay">
-            <div class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+        <li class="projects__item">
+          <div class="projects__overlay">
+            <div class="projects__card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+              Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
             <img src="./images/imac.jpg" alt="imac" width="370" height="294" />
           </div>
-          <div class="container-projects">
+          <div class="projects__container">
             <h3>Inspiration has no Borders</h3>
             <p>Веб-сайт</p>
         </li>
-        <li class="list">
-          <div class="cont-overlay">
-            <div class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+        <li class="projects__item">
+          <div class="projects__overlay">
+            <div class="projects__card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+              Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
             <img src="./images/journal.jpg" alt="journal" width="370" height="294" />
           </div>
-          <div class="container-projects">
+          <div class="projects__container">
             <h3>Видання Limited Edition</h3>
             <p>Дизайн</p>
         </li>
-        <li class="list">
-          <div class="cont-overlay">
-            <div class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+        <li class="projects__item">
+          <div class="projects__overlay">
+            <div class="projects__card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+              Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
             <img src="./images/label.jpg" alt="label" width="370" height="294" />
           </div>
-          <div class="container-projects">
+          <div class="projects__container">
             <h3>Проєкт LAB</h3>
             <p>Маркетинг</p>
         </li>
-        <li class="list">
-          <div class="cont-overlay">
-            <div class="overlay-card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
+        <li class="projects__item">
+          <div class="projects__overlay">
+            <div class="projects__card">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів.
+              Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
             <img src="./images/macbook.jpg" alt="macbook" width="370" height="294" />
           </div>
-          <div class="container-projects">
+          <div class="projects__container">
             <h3>Growing Business</h3>
             <p>Додаток</p>
         </li>
@@ -168,19 +176,20 @@
   </main>
   <footer class="footer">
     <div class="container">
-      <div class="container-footer">
-        <h2 class="logo">
-          <a href="./index.html"><span class="span-logo">Web</span>Studio</a>
+      <div class="footer__container">
+        <h2 class="logo logo--light">
+          <a href="./index.html"><span class="logo__accent">Web</span>Studio</a>
         </h2>
         <address class="location">м. Київ, пр-т Лесі Українки, 26</address>
         <a class="email" href="mailto:info@devstudio.com">info@devstudio.com</a>
         <a class="phone" href="tel:+380961111111">+38 096 111 11 11</a>
       </div>
-      <div class="cont-add">
-        <h3>Приєднуйтесь</h3>
-        <ul class="add-icons">
-          <li>
-            <a class="back-social" href="#">
+
+      <div class="footer-social">
+        <h3 class="footer__social-title">Приєднуйтесь</h3>
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <a href="#">
               <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)">
                   <path
@@ -196,8 +205,8 @@
               </svg>
             </a>
           </li>
-          <li>
-            <a class="back-social" href="#">
+          <li class="footer__social-item">
+            <a href="#">
               <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)">
                   <path
@@ -211,8 +220,8 @@
               </svg>
             </a>
           </li>
-          <li>
-            <a class="back-social" href="#">
+          <li class="footer__social-item">
+            <a href="#">
               <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)">
                   <path
@@ -226,8 +235,8 @@
               </svg>
             </a>
           </li>
-          <li>
-            <a class="back-social" href="#">
+          <li class="footer__social-item">
+            <a href="#">
               <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g clip-path="url(#a)">
                   <path
@@ -243,34 +252,22 @@
           </li>
         </ul>
       </div>
-              <form class="form-subscribe">
-          <h2>Підпишіться на розсилку</h2>
-          <div class="form-cont">
-            <input
-              class="subscribe-input"
-              type="email"
-              name="email"
-              id="email"
-              placeholder="E-mail"
-            />
-            <a class="subscribe-link" href="#">
-              Підписатися
-              <svg
-                class="subscribe-icon"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-          </div>
-        </form>
+
+      <form class="form-subscribe">
+        <h2>Підпишіться на розсилку</h2>
+        <div class="subscribe__cont">
+          <input class="subscribe__input" type="email" name="email" id="email" placeholder="E-mail" />
+          <button type="submit" class="subscribe__link">
+            Підписатися
+            <svg class="subscribe__icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+      </form>
     </div>
   </footer>
 </body>

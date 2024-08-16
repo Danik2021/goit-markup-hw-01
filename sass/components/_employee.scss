@@ -1,0 +1,76 @@
+/* Section employee */
+
+.section-employee {
+  padding: 94px 0;
+  background-color: $background-color;
+}
+
+.employee__list {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+  column-gap: 30px;
+}
+
+.employee__item {
+  text-align: center;
+  background-color: $button-color;
+  max-width: 270px;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  p {
+    color: $primary-text-color;
+    text-align: center;
+    font-family: $main-font-family;
+    font-weight: 400;
+    font-size: $main-font-size;
+    letter-spacing: 0.03em;
+    padding: 10px 70px 16px 70px;
+    white-space: nowrap;
+  }
+
+  img {
+    margin-bottom: 30px;
+  }
+
+  h3 {
+    color: $title-text-color;
+    font-family: $main-font-family;
+    font-weight: 500;
+    font-size: $main-font-size;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.socials li .socials__link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border-radius: 50%;
+  padding: 12px 12px;
+}
+
+.socials li .socials__link:hover {
+  background-color: $accent-color;
+}
+
+.socials li .socials__link:hover svg {
+  fill: $fill-color;
+}
+
+.socials li .socials__link svg {
+  fill: $fill-color;
+  width: 20px;
+  height: 20px;
+}

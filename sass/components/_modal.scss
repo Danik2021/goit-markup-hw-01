@@ -1,0 +1,50 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms ease-in;
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.is-hidden .modal {
+  position: relative;
+  left: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%) scale(1.5);
+}
+
+.modal {
+  position: relative;
+  padding: 8px 8px;
+  width: 536px;
+  height: 589px;
+  background-color: $button-color;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms ease-in;
+  text-align: end;
+}
+
+.backdrop__button {
+  padding: 8px 8px 0 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  background-image: url(../images/icon/close.svg);
+}
+
+.modal__title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
