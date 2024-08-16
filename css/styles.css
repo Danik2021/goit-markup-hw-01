@@ -451,7 +451,7 @@ a.phone {
   text-decoration: none;
 }
 
-.header__span {
+.logo__accent {
   color: #2196f3;
 }
 
@@ -791,7 +791,7 @@ a.phone {
 .footer__container .logo {
   margin-bottom: 11px;
 }
-.footer__container .logo a {
+.footer__container .logo--light a {
   color: #ffffff;
 }
 .footer__container .location {
