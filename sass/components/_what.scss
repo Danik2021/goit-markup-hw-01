@@ -1,4 +1,11 @@
 /* Section our-works */
+.what-section {
+  @media screen and (max-width: 1599px) {
+    display: none;
+  }
+  display: block;
+}
+
 .what__img-works {
   display: flex;
   margin: 0px;

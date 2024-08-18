@@ -1,25 +1,39 @@
 /* Сlients */
 
 .clients__list {
-  display: flex;
-  column-gap: 30px;
-  justify-content: space-evenly;
+  @media screen and (min-width: 479px) {
+    display: grid;
+    grid-template-columns: repeat(2, calc(50% - 15px));
+    gap: 30px 30px;
+  }
+
+  @media screen and (min-width: 767px) {
+    grid-template-columns: repeat(3, calc((100% - 4 * 15px) / 3));
+  }
+
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    gap: 30px 0;
+    justify-content: space-between;
+  }
 }
 
 .clients__item {
-  width: 170px;
   height: 92px;
-  border: 2px solid $fill-color;
+  border: 2px solid #afb1b8;
   border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
   &:hover {
-    cursor: pointer;
-    border: 2px solid $accent-color;
-    fill: $accent-color;
+    border: 2px solid #2196f3;
+    fill: #2196f3;
   }
   &:hover svg path {
     fill: inherit;
+  }
+
+  @media screen and (min-width: 1199px) {
+    width: 170px;
   }
 }

@@ -1,4 +1,15 @@
 // Form
+.subscribe {
+  @media screen and (min-width: 767px) {
+    grid-column: 1 / -1;
+  }
+
+  @media screen and (min-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
 
 .subscribe h2 {
   font-weight: 700;
@@ -22,6 +33,14 @@
     padding-left: 16px;
     padding-right: 16px;
     border-radius: 4px;
+
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 1199px) {
+      width: 358px;
+    }
   }
 
   .subscribe__button {
@@ -46,6 +65,18 @@
     width: 24px;
     height: 24px;
     object-fit: contain;
+  }
+
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+  }
+
+  @media screen and (min-width: 1199px) {
+    flex-direction: row;
+    gap: 0 12px;
   }
 }
 
