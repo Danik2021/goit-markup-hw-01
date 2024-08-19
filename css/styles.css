@@ -1155,7 +1155,7 @@ a.phone {
     margin: 0;
     background-color: transparent;
     border: 0;
-    z-index: 6;
+    z-index: 5;
   }
   .nav__burger:hover .nav__burger-open {
     fill: #2196f3;
@@ -1254,7 +1254,7 @@ a.phone {
   min-width: 100%;
   min-height: 100%;
   background-color: #ffffff;
-  z-index: 5;
+  z-index: 4;
   left: 0;
   right: 0;
   top: 0;
@@ -1617,6 +1617,7 @@ a.phone {
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 500ms ease-in;
   transition: opacity 500ms ease-in;
+  z-index: 6;
 }
 
 .is-hidden {
@@ -1649,6 +1650,7 @@ a.phone {
   transition: transform 500ms ease-in;
   transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
   text-align: end;
+  z-index: 7;
 }
 @media screen and (min-width: 1199px) {
   .modal {
