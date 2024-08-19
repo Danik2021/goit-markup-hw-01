@@ -575,32 +575,32 @@ a.phone {
       -ms-flex-pack: center;
           justify-content: center;
   background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/background-1600.jpg") 1x, url("../images/background-3200.jpg") 2x);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/background-1600.jpg") 1x, url("../images/background-3200.jpg") 2x);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/background-1600.jpg") 1x, url("../images/background-3200.jpg") 2x);
   height: 400px;
-  /*  @media screen and (min-width: 479px) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      image-set(url('../images/background-480.jpg') 1x, url('../images/background-480@2x.jpg') 2x);
+  /* */
+}
+@media screen and (min-width: 479px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/background-480.jpg") 1x, url("../images/background-480@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/background-480.jpg") 1x, url("../images/background-480@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/background-480.jpg") 1x, url("../images/background-480@2x.jpg") 2x);
     height: 400px;
   }
-
-  @media screen and (min-width: 767px) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      image-set(url('../images/background-768.jpg') 1x, url('../images/background-768@2x.jpg') 2x);
+}
+@media screen and (min-width: 767px) {
+  .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/background-768.jpg") 1x, url("../images/background-768@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/background-768.jpg") 1x, url("../images/background-768@2x.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/background-768.jpg") 1x, url("../images/background-768@2x.jpg") 2x);
   }
-
-  @media screen and (min-width: 1999px) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      image-set(url('../images/background-1600.jpg') 1x, url('../images/background-3200.jpg') 2x);
-    height: 600px;
-  }
-    */
 }
 @media screen and (min-width: 1199px) {
   .overlay {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/background-1600.jpg") 1x, url("../images/background-3200.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/background-1600.jpg") 1x, url("../images/background-3200.jpg") 2x);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), image-set(url("../images/background-1600.jpg") 1x, url("../images/background-3200.jpg") 2x);
     height: 600px;
   }
 }
@@ -633,7 +633,7 @@ a.phone {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
 }
-@media screen and (min-width: 1999px) {
+@media screen and (min-width: 1199px) {
   .order-text {
     font-size: 44px;
     max-width: 696px;
@@ -1246,10 +1246,11 @@ a.phone {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   position: fixed;
-  padding: 15px;
+  padding: 30px 40px 48px;
   min-width: 100%;
   min-height: 100%;
   background-color: #ffffff;
@@ -1258,6 +1259,17 @@ a.phone {
   right: 0;
   top: 0;
   bottom: 0;
+}
+
+.mobile__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 64px 0;
 }
 
 @-webkit-keyframes mobileMenu {
@@ -1454,6 +1466,11 @@ a.phone {
      -moz-column-gap: 6px;
           column-gap: 6px;
 }
+@media screen and (max-width: 1199px) {
+  .form__container--checkbox {
+    font-size: 12px;
+  }
+}
 
 .form__input-text {
   position: absolute;
@@ -1542,6 +1559,11 @@ a.phone {
   text-decoration: underline;
   color: #2196f3;
 }
+@media screen and (max-width: 1199px) {
+  .form-privacy {
+    font-size: 12px;
+  }
+}
 
 .form-submit {
   display: inline-block;
@@ -1614,8 +1636,8 @@ a.phone {
 .modal {
   position: relative;
   padding: 8px 8px;
-  width: 536px;
-  height: 589px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   left: 50%;
   top: 50%;
@@ -1627,6 +1649,12 @@ a.phone {
   transition: transform 500ms ease-in;
   transition: transform 500ms ease-in, -webkit-transform 500ms ease-in;
   text-align: end;
+}
+@media screen and (min-width: 1199px) {
+  .modal {
+    width: 536px;
+    height: 589px;
+  }
 }
 
 .backdrop__button {

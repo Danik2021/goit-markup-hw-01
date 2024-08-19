@@ -91,9 +91,9 @@
   animation: mobileMenu 500ms ease-in;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   position: fixed;
-  padding: 15px;
+  padding: 30px 40px 48px;
   min-width: 100%;
   min-height: 100%;
   background-color: $button-color;
@@ -102,4 +102,10 @@
   right: 0;
   top: 0;
   bottom: 0;
+}
+
+.mobile__container {
+  display: flex;
+  flex-direction: column;
+  gap: 64px 0;
 }

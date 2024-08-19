@@ -4,16 +4,12 @@
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
+  background-size: cover;
   max-width: 1600px;
   margin: 0 auto;
-
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    image-set(url('../images/background-1600.jpg') 1x, url('../images/background-3200.jpg') 2x);
   height: 400px;
-  @media screen and (min-width: 1199px) {
-    height: 600px;
-  }
-  /*  @media screen and (min-width: 479px) {
+
+  @media screen and (min-width: 479px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       image-set(url('../images/background-480.jpg') 1x, url('../images/background-480@2x.jpg') 2x);
     height: 400px;
@@ -24,12 +20,12 @@
       image-set(url('../images/background-768.jpg') 1x, url('../images/background-768@2x.jpg') 2x);
   }
 
-  @media screen and (min-width: 1999px) {
+  @media screen and (min-width: 1199px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       image-set(url('../images/background-1600.jpg') 1x, url('../images/background-3200.jpg') 2x);
     height: 600px;
   }
-    */
+  /* */
 }
 
 .order__container {
@@ -51,7 +47,7 @@
   text-transform: uppercase;
   font-family: $main-font-family;
 
-  @media screen and (min-width: 1999px) {
+  @media screen and (min-width: 1199px) {
     font-size: 44px;
     max-width: 696px;
   }

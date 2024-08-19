@@ -113,6 +113,9 @@
   justify-content: center;
   align-items: center;
   column-gap: 6px;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }
 
 .form__input-text {
@@ -191,6 +194,9 @@
 .form-privacy {
   text-decoration: underline;
   color: $accent-color;
+  @media screen and (max-width: 1199px) {
+    font-size: 12px;
+  }
 }
 
 .form-submit {
