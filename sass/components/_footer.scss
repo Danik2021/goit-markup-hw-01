@@ -50,9 +50,7 @@
 
   .location {
     width: 231px;
-    font-family: $main-font-family;
-    font-size: $secondary-font-size;
-    line-height: $main-line-height;
+    @extend %basik-text;
     font-style: normal;
     letter-spacing: $main-letter-spacing;
     color: $button-color;

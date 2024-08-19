@@ -27,21 +27,17 @@
 }
 
 .about__list h3 {
-  color: #212121;
-  font-size: 14px;
+  @extend %basik-text;
+  color: $title-text-color;
   font-weight: 700;
-  letter-spacing: $main-letter-spacing;
   text-transform: uppercase;
-  font-family: $main-font-family;
   margin-bottom: 10px;
 }
 
 .about__list p {
   color: #757575;
-  font-family: $main-font-family;
+  @extend %basik-text;
   font-weight: 400;
-  font-size: $secondary-font-size;
-  line-height: $main-line-height;
   letter-spacing: $main-letter-spacing;
 }
 

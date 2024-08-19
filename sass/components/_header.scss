@@ -90,7 +90,7 @@
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  letter-spacing: 0.03em;
+  letter-spacing: $main-letter-spacing;
   text-decoration: none;
 }
 
@@ -111,11 +111,9 @@
 
 .nav__menu .nav__item {
   display: inline-block;
-  font-family: $main-font-family;
-  line-height: 1.7;
-  font-size: $secondary-font-size;
+  @extend %basik-text;
   color: $title-text-color;
-  letter-spacing: 0.02em;
+  letter-spacing: $main-letter-spacing;
   font-weight: 500;
 }
 
