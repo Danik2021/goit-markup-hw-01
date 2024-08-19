@@ -11,12 +11,17 @@
   }
 }
 
-.subscribe h2 {
+.subscribe__title {
+  margin-bottom: 20px;
+  text-align: center;
   font-weight: 700;
   text-transform: uppercase;
   color: $button-color;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  font-size: 14px;
+  @media screen and (min-width: 1199px) {
+    text-align: left;
+  }
 }
 
 .subscribe__cont {
@@ -44,21 +49,21 @@
   }
 
   .subscribe__button {
+    width: 200px;
+    height: 58px;
+    padding: 10px 28px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 28px;
-    border: none;
     gap: 0 10px;
-    width: 200px;
-    height: 58px;
+    border: none;
+    border-radius: 4px;
     color: $button-color;
     font-weight: 700;
     letter-spacing: 0.03em;
-    line-height: 30px;
+    line-height: 1.7;
     background-color: $accent-color;
     cursor: pointer;
-    border-radius: 4px;
   }
 
   .subscribe__icon {
@@ -206,7 +211,7 @@
   background-color: $accent-color;
   color: $button-color;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.7;
   text-align: center;
   margin: 0 auto;
   border-radius: 4px;

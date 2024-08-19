@@ -302,27 +302,48 @@ template {
   display: none;
 }
 
+ul, p, h1,
+h2,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+@-webkit-keyframes mobileMenu {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes mobileMenu {
+  0% {
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
 /* Body */
 body {
   font-family: "Roboto", sans-serif;
   color: #212121;
-}
-
-h1,
-h2,
-h3 {
-  margin: 0px;
-  padding: 0px;
-}
-
-p {
-  margin: 0px;
-  padding: 0px;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 ul li {
@@ -367,11 +388,6 @@ button {
   letter-spacing: 0.03em;
 }
 
-.email:focus,
-.phone:focus {
-  color: #2196f3;
-}
-
 a.email,
 a.phone {
   font-family: "Roboto", sans-serif;
@@ -379,6 +395,21 @@ a.phone {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: #757575;
+  font-weight: 500;
+}
+
+.email:hover,
+.phone:hover {
+  color: #2196f3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.email:focus,
+.phone:focus {
+  color: #2196f3;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Header */
@@ -532,7 +563,7 @@ a.phone {
 .nav__menu .nav__item {
   display: inline-block;
   font-family: "Roboto", sans-serif;
-  line-height: 1.14;
+  line-height: 1.7;
   font-size: 14px;
   color: #212121;
   letter-spacing: 0.02em;
@@ -627,11 +658,16 @@ a.phone {
   font-size: 26px;
   text-align: center;
   color: #ffffff;
-  line-height: 1.4;
+  line-height: 1.7;
   font-weight: 900;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
+}
+@media screen and (min-width: 767px) {
+  .order-text {
+    max-width: 360px;
+  }
 }
 @media screen and (min-width: 1199px) {
   .order-text {
@@ -644,6 +680,7 @@ a.phone {
   width: 216px;
   height: 50px;
   color: #ffffff;
+  font-weight: 700;
   background-color: #2196f3;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
@@ -655,35 +692,36 @@ a.phone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px 0;
 }
-@media screen and (max-width: 767px) {
+.about__list li {
+  text-align: left;
+}
+@media screen and (min-width: 767px) {
   .about__list {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 30px 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px 30px;
     padding: 0 15px;
   }
-  .about__list li {
-    text-align: left;
-  }
   .about__list h3 {
     text-align: left;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1199px) {
   .about__list {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px 30px;
-  }
-  .about__list li {
-    text-align: left;
-  }
-  .about__list h3 {
-    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 0px;
   }
 }
 
@@ -743,7 +781,7 @@ a.phone {
 .what-section {
   display: block;
 }
-@media screen and (max-width: 1599px) {
+@media screen and (max-width: 1199px) {
   .what-section {
     display: none;
   }
@@ -1017,9 +1055,6 @@ a.phone {
   max-width: 231px;
   row-gap: 9px;
 }
-.footer__container .location {
-  width: 231px;
-}
 .footer__container .logo {
   margin-bottom: 11px;
 }
@@ -1027,24 +1062,14 @@ a.phone {
   color: #ffffff;
 }
 .footer__container .location {
+  width: 231px;
   font-family: "Roboto", sans-serif;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.7;
+  font-style: normal;
   letter-spacing: 0.03em;
   color: #ffffff;
-}
-.footer__container .email:hover,
-.footer__container .phone:hover {
-  color: #2196f3;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.footer__container .email:footer,
-.footer__container .phone:footer {
-  color: #2196f3;
-  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: center;
 }
 @media screen and (min-width: 480px) {
   .footer__container {
@@ -1075,6 +1100,14 @@ a.phone {
   }
 }
 @media screen and (min-width: 767px) {
+  .footer__container .footer__container-about {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 231px;
+  }
+}
+@media screen and (min-width: 1199px) {
   .footer__container {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -1084,8 +1117,16 @@ a.phone {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: start;
-    width: 231px;
   }
+  .footer__container .location {
+    text-align: left;
+  }
+}
+
+.footer__container-about .email,
+.footer__container-about .phone {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
 }
 
 .footer-social {
@@ -1193,6 +1234,9 @@ a.phone {
 .mobile__link {
   font-size: 40px;
 }
+.mobile__link:first-child a {
+  color: #2196f3;
+}
 
 .mobile__link:not(:last-child) {
   margin-bottom: 32px;
@@ -1218,6 +1262,7 @@ a.phone {
 
 .mobile__phone {
   color: #2196f3;
+  font-size: 34px;
 }
 
 .mobile__list {
@@ -1226,6 +1271,7 @@ a.phone {
   display: flex;
   gap: 0px 10px;
   color: #2196f3;
+  font-weight: 500;
 }
 .mobile__list li:not(:last-child) {
   padding-right: 10px;
@@ -1250,7 +1296,7 @@ a.phone {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: fixed;
-  padding: 30px 40px 48px;
+  padding: 48px 40px;
   min-width: 100%;
   min-height: 100%;
   background-color: #ffffff;
@@ -1272,37 +1318,6 @@ a.phone {
   gap: 64px 0;
 }
 
-@-webkit-keyframes mobileMenu {
-  0% {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes mobileMenu {
-  0% {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px);
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
-  }
-  100% {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
-    opacity: 1;
-  }
-}
 @media screen and (min-width: 767px) {
   .subscribe {
     grid-column: 1/-1;
@@ -1323,12 +1338,19 @@ a.phone {
   }
 }
 
-.subscribe h2 {
+.subscribe__title {
+  margin-bottom: 20px;
+  text-align: center;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
   letter-spacing: 0.03em;
-  margin-bottom: 20px;
+  font-size: 14px;
+}
+@media screen and (min-width: 1199px) {
+  .subscribe__title {
+    text-align: left;
+  }
 }
 
 .subscribe__cont {
@@ -1359,6 +1381,9 @@ a.phone {
   }
 }
 .subscribe__cont .subscribe__button {
+  width: 200px;
+  height: 58px;
+  padding: 10px 28px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1368,18 +1393,15 @@ a.phone {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 10px 28px;
-  border: none;
   gap: 0 10px;
-  width: 200px;
-  height: 58px;
+  border: none;
+  border-radius: 4px;
   color: #ffffff;
   font-weight: 700;
   letter-spacing: 0.03em;
-  line-height: 30px;
+  line-height: 1.7;
   background-color: #2196f3;
   cursor: pointer;
-  border-radius: 4px;
 }
 .subscribe__cont .subscribe__icon {
   width: 24px;
@@ -1572,7 +1594,7 @@ a.phone {
   background-color: #2196f3;
   color: #ffffff;
   font-weight: 700;
-  line-height: 30px;
+  line-height: 1.7;
   text-align: center;
   margin: 0 auto;
   border-radius: 4px;

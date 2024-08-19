@@ -50,6 +50,9 @@
 
 .mobile__link {
   font-size: 40px;
+  &:first-child a {
+    color: $accent-color;
+  }
 }
 
 .mobile__link:not(:last-child) {
@@ -71,6 +74,7 @@
 
 .mobile__phone {
   color: $accent-color;
+  font-size: 34px;
 }
 
 .mobile__list {
@@ -81,6 +85,7 @@
     padding-right: 10px;
     border-right: 1px solid $fill-color;
   }
+  font-weight: 500;
 }
 
 .mobile-menu {
@@ -93,7 +98,7 @@
   flex-direction: column;
   justify-content: space-between;
   position: fixed;
-  padding: 30px 40px 48px;
+  padding: 48px 40px;
   min-width: 100%;
   min-height: 100%;
   background-color: $button-color;
