@@ -1,3 +1,4 @@
+/* Body */
 body {
   font-family: $main-font-family;
   color: $title-text-color;
@@ -6,43 +7,84 @@ body {
 h1,
 h2,
 h3 {
-  margin: 0px;
-  padding: 0px;
+  @extend %normalize;
 }
 
 p {
-  margin: 0px;
-  padding: 0px;
+  @extend %normalize;
 }
 
 ul {
-  margin: 0;
-  padding: 0;
+  @extend %normalize;
 }
 
 ul li {
   list-style: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+*:hover {
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
-.button {
-  cursor: pointer;
-  border: none;
+.section {
+  text-align: center;
+  margin-bottom: 94px;
+}
+
+.heading {
+  margin: 0px;
+  margin-bottom: 50px;
+  color: $title-text-color;
+  font-family: $main-font-family;
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: $main-letter-spacing;
 }
 
 a.email,
 a.phone {
-  font-family: $main-font-family;
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
+  @extend %basik-text;
+  letter-spacing: $main-letter-spacing;
   color: $primary-text-color;
+  font-weight: 500;
+}
+
+.email,
+.phone {
+  &:hover {
+    color: $accent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.email,
+.phone {
+  &:focus {
+    color: $accent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

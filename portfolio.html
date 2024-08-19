@@ -17,7 +17,7 @@
 
 <body>
   <header class="header">
-    <div class="header__container container">
+    <div class="header__container">
       <h1 class="logo">
         <a href="./index.html"> <span class="logo__accent">Web</span>Studio</a>
       </h1>
@@ -28,7 +28,7 @@
           <li class="nav__item"><a href="#">Контакти</a></li>
         </ul>
       </nav>
-      <div class="header__menu">
+      <div class="header__contacts">
         <div>
           <a class="email header__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
           <svg class="header__icon" width="16" height="12" xmlns="http://www.w3.org/2000/svg">
@@ -48,6 +48,16 @@
           </svg>
         </div>
       </div>
+      <button class="nav__burger" data-menu-button>
+        <svg class="nav__burger-open" width="24" height="16" viewBox="0 0 24 16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z" />
+        </svg>
+        <svg class="nav__burger-close" width="19" height="19" viewBox="0 0 19 19">
+          <path
+            d="M18.6667 1.88L16.7867 0L9.33333 7.45334L1.88 0L0 1.88L7.45334 9.33333L0 16.7867L1.88 18.6667L9.33333 11.2133L16.7867 18.6667L18.6667 16.7867L11.2133 9.33333L18.6667 1.88Z" />
+        </svg>
+      </button>
     </div>
   </header>
   <main class="main">
@@ -66,8 +76,8 @@
               Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
-            <img src="./images/texnokryak.jpg" srcset="./images/texnokryak.jpg 1x, ./images/texnokryak-740.jpg 2x"
-              alt="texnokryak" width="370" height="294" />
+            <img class="project__image" src="./images/texnokryak-450px.jpg"
+              srcset="./images/texnokryak-450px.jpg 1x, ./images/texnokryak-450px@2x.jpg 2x" alt="texnokryak" />
           </div>
           <div class="projects__container">
             <h3>Технокряк</h3>
@@ -80,8 +90,8 @@
               Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
-            <img src="./images/billboard.jpg" srcset="./images/billboard.jpg 1x, ./images/billboard-740.jpg 2x"
-              alt="billboard" width="370" height="294" />
+            <img class="project__image" src="./images/billboard-450px.jpg"
+              srcset="./images/billboard-450.jpg 1x, ./images/billboard-450px@2x.jpg 2x" alt="billboard" />
           </div>
           <div class="projects__container">
             <h3>Постер New Orlean vs Golden Star</h3>
@@ -94,8 +104,8 @@
               Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
-            <img src="./images/restaurant.jpg" srcset="./images/restaurant.jpg 1x, ./images/restaurant-740.jpg 2x"
-              alt="restaurant" width="370" height="294" />
+            <img class="project__image" src="./images/restaurant.jpg"
+              srcset="./images/restaurant-450px.jpg 1x, ./images/restaurant-450px@2x.jpg 2x" alt="restaurant" />
           </div>
           <div class="projects__container">
             <h3>Ресторан Seafood</h3>
@@ -108,8 +118,8 @@
               Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
-            <img src="./images/headphones.jpg" srcset="./images/headphones.jpg 1x, ./images/headphones-740.jpg 2x"
-              alt="headphones" width="370" height="294" />
+            <img class="project__image" src="./images/headphones-450px.jpg"
+              srcset="./images/headphones-450px.jpg 1x, ./images/headphones-450px@2x.jpg 2x" alt="headphones" />
           </div>
           <div class="projects__container">
             <h3>Проєкт Prime</h3>
@@ -121,8 +131,8 @@
               Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
-            <img src="./images/boxes.jpg" srcset="./images/boxes.jpg 1x, ./images/boxes-740.jpg 2x" alt="boxes"
-              width="370" height="294" />
+            <img class="project__image" src="./images/boxes.jpg"
+              srcset="./images/boxes-450px.jpg 1x, ./images/boxes-450px@2x.jpg 2x" alt="boxes" />
           </div>
           <div class="projects__container">
             <h3>Проєкт Boxes</h3>
@@ -134,10 +144,10 @@
               Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
-            <img src="./images/imac.jpg" srcset="./images/imac.jpg 1x, ./images/imac-740.jpg 2x" alt="imac" width="370"
-              height="294" />
+            <img class="project__image" src="./images/imac-450px.jpg"
+              srcset="./images/imac-450px.jpg 1x, ./images/imac-450px@2x.jpg 2x" alt="imac" />
           </div>
-          <div class="projects__container">
+          <div class=" projects__container">
             <h3>Inspiration has no Borders</h3>
             <p>Веб-сайт</p>
         </li>
@@ -147,8 +157,8 @@
               Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
-            <img src="./images/journal.jpg" srcset="./images/journal.jpg 1x, ./images/journal-740.jpg 2x" alt="journal"
-              width="370" height="294" />
+            <img class="project__image" src="./images/journal-450px.jpg"
+              srcset="./images/journal-450px.jpg 1x, ./images/journal-450px@2x.jpg 2x" alt="journal" />
           </div>
           <div class="projects__container">
             <h3>Видання Limited Edition</h3>
@@ -160,8 +170,8 @@
               Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
-            <img src="./images/label.jpg" srcset="./images/label.jpg 1x, ./images/label-740.jpg 2x" alt="label"
-              width="370" height="294" />
+            <img class="project__image" src="./images/label-450px.jpg"
+              srcset="./images/label-450px.jpg 1x, ./images/label-450px.jpg 2x" alt="label" />
           </div>
           <div class="projects__container">
             <h3>Проєкт LAB</h3>
@@ -173,7 +183,8 @@
               Все
               це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.
             </div>
-            <img src="./images/macbook.jpg" alt="macbook" width="370" height="294" />
+            <img class="project__image" src="./images/macbook-450px.jpg"
+              srcset="./images/macbook-450px.jpg 1x, ./images/macbook-450px@2x.jpg 2x" alt="macbook" />
           </div>
           <div class="projects__container">
             <h3>Growing Business</h3>
@@ -182,7 +193,38 @@
       </ul>
     </article>
   </main>
-  <footer class="footer">
+  <div class="mobile-menu" data-menu>
+    <ul class="mobile__nav">
+      <li class="mobile__link"><a href="./index.html">Студія</a></li>
+      <li class="mobile__link"><a href="./portfolio.html">Портфоліо</a></li>
+      <li class="mobile__link"><a href="#">Контакти</a></li>
+    </ul>
+    <div class="mobile__container">
+      <div class="mobile__contacts">
+        <div>
+          <a class="mobile__phone" href="tel:+380961111111">+38 096 111 11 11</a>
+        </div>
+        <div>
+          <a class="mobile__email" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </div>
+      </div>
+      <ul class="mobile__list">
+        <li>
+          <a href="#">Instagram</a>
+        </li>
+        <li>
+          <a href="#">Twitter</a>
+        </li>
+        <li>
+          <a href="#">Facebook</a>
+        </li>
+        <li>
+          <a href="#">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- <footer class="footer">
     <div class="container">
       <div class="footer__container">
         <h2 class="logo logo--light">
@@ -277,7 +319,8 @@
         </div>
       </form>
     </div>
-  </footer>
+  </footer> -->
 </body>
+<script src="./js/menu-btn.js"></script>
 
 </html>
