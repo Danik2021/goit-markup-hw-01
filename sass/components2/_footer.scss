@@ -35,8 +35,7 @@
 }
 
 .footer__container {
-  display: flex;
-  flex-direction: column;
+  @extend %main-flexbox;
   max-width: 231px;
   row-gap: 9px;
 

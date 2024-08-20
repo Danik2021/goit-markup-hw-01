@@ -18,7 +18,8 @@
 }
 
 .what__label {
-  @extend %main-flexbox;
+  display: flex;
+  @include flexBox(center, center);
   position: absolute;
   width: 100%;
   height: 70px;

@@ -2,8 +2,7 @@
   display: none;
   @media screen and (max-width: 767px) {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flexBox(center, center);
     width: 40px;
     height: 40px;
     padding: 0;
@@ -60,8 +59,7 @@
 }
 
 .mobile__contacts {
-  display: flex;
-  flex-direction: column;
+  @extend %main-flexbox;
   gap: 32px 0;
 }
 
@@ -94,8 +92,7 @@
 
 .mobile-menu.is-open {
   animation: mobileMenu 500ms ease-in;
-  display: flex;
-  flex-direction: column;
+  @extend %main-flexbox;
   justify-content: space-between;
   position: fixed;
   padding: 48px 40px;
@@ -110,7 +107,6 @@
 }
 
 .mobile__container {
-  display: flex;
-  flex-direction: column;
+  @extend %main-flexbox;
   gap: 64px 0;
 }

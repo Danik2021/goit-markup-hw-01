@@ -19,10 +19,11 @@
 }
 
 .clients__item {
+  display: flex;
+  @include flexBox(center, center);
   height: 92px;
   border: 2px solid $fill-color;
-  border-radius: 4px;
-  @extend %main-flexbox;
+  border-radius: $border-radius;
   &:hover {
     border: 2px solid $accent-color;
     fill: $accent-color;
