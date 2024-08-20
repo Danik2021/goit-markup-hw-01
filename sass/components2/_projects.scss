@@ -142,6 +142,7 @@
 }
 
 .project__image {
-  background-size: cover;
+  object-fit: cover;
+  height: 294px;
   width: 100%;
 }
