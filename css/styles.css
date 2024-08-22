@@ -509,6 +509,9 @@ a.phone {
 
 .header__icon {
   margin-right: 10px;
+  fill: #757575;
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 @media screen and (min-width: 479px) {
@@ -539,8 +542,8 @@ a.phone {
   color: #2196f3;
 }
 
-.header__email:hover + svg path,
-.header__phone:hover + svg path {
+.header__email:hover + .header__icon,
+.header__phone:hover + .header__icon {
   fill: #2196f3;
 }
 
@@ -859,13 +862,20 @@ a.phone {
   height: 92px;
   border: 2px solid #afb1b8;
   border-radius: 4px;
+  -webkit-transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__item svg {
+  fill: #afb1b8;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients__item:hover {
   border: 2px solid #2196f3;
   fill: #2196f3;
 }
-.clients__item:hover svg path {
-  fill: inherit;
+.clients__item:hover svg {
+  fill: #2196f3;
 }
 @media screen and (min-width: 1199px) {
   .clients__item {
@@ -972,7 +982,7 @@ a.phone {
 }
 
 .socials li .socials__link:hover svg {
-  fill: #afb1b8;
+  fill: #ffffff;
 }
 
 .socials li .socials__link svg {
@@ -1143,13 +1153,13 @@ a.phone {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
-.footer__social-item:hover svg g {
+.footer__social-item:hover svg {
   fill: #ffffff;
 }
 .footer__social-item:hover {
   background-color: #2196f3;
 }
-.footer__social-item svg g {
+.footer__social-item svg {
   fill: #ffffff;
 }
 
@@ -1360,8 +1370,6 @@ a.phone {
 .subscribe__cont .subscribe__icon {
   width: 24px;
   height: 24px;
-  -o-object-fit: contain;
-     object-fit: contain;
 }
 @media screen and (min-width: 480px) {
   .subscribe__cont {
@@ -1630,13 +1638,22 @@ a.phone {
 }
 
 .backdrop__button {
-  padding: 8px 8px 0 0;
-  border: none;
+  border: 1px solid #e5e5e5;
+  border-radius: 50%;
   background-color: transparent;
   cursor: pointer;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 30px;
   height: 30px;
-  background-image: url(../images/icon/close.svg);
+}
+.backdrop__button svg {
+  width: 11px;
+  height: 11px;
+  fill: black;
+}
+.backdrop__button:hover svg {
+  fill: #2196f3;
 }
 
 .modal__title {
