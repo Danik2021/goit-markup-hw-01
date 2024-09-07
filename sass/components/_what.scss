@@ -1,6 +1,6 @@
 /* Section our-works */
 .what-section {
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: $desktop-width) {
     display: none;
   }
   display: block;
@@ -8,7 +8,7 @@
 
 .what__img-works {
   display: flex;
-  @extend %normalize;
+  @extend %normalizeIndents;
   justify-content: space-between;
 }
 

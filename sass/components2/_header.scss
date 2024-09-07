@@ -10,33 +10,33 @@
   margin: 0 auto;
   padding: 0 15px;
 
-  @media screen and (min-width: 479px) {
+  @media screen and (min-width: $mobile-width) {
     justify-content: space-between;
     height: 60px;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: $tablet-width) {
     height: 80px;
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $desktop-width) {
     justify-content: start;
   }
 }
 
 .header__contacts {
-  @media screen and (min-width: 479px) {
+  @media screen and (min-width: $mobile-width) {
     display: none;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     align-items: start;
     gap: 9px 0;
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $desktop-width) {
     margin-left: auto;
     flex-direction: row;
     gap: 0 30px;
@@ -56,11 +56,11 @@
 }
 
 .nav {
-  @media screen and (min-width: 479px) {
+  @media screen and (min-width: $mobile-width) {
     display: none;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: $tablet-width) {
     display: flex;
   }
 }
@@ -106,7 +106,7 @@
   display: flex;
   justify-content: space-between;
   gap: 0 50px;
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $desktop-width) {
     margin-left: 93px;
   }
 }

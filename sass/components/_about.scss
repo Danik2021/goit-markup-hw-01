@@ -8,7 +8,7 @@
     text-align: left;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: $tablet-width) {
     flex-wrap: wrap;
     flex-direction: row;
     gap: 30px 30px;
@@ -19,7 +19,7 @@
     }
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $desktop-width) {
     justify-content: space-between;
     gap: 0px;
   }
@@ -41,15 +41,15 @@
 }
 
 .about__list li {
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile-width) {
     width: 100%;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet-width) {
     width: calc(50% - 15px);
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $desktop-width) {
     max-width: 270px;
     text-align: left;
   }
@@ -64,7 +64,7 @@
     display: inline-block;
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $desktop-width) {
     max-width: 270px;
     max-height: 120px;
   }

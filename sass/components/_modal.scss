@@ -34,7 +34,7 @@
   transition: transform 500ms ease-in;
   text-align: end;
   z-index: 7;
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $desktop-width) {
     width: 528px;
     height: 581px;
   }

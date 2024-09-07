@@ -7,15 +7,15 @@ body {
 h1,
 h2,
 h3 {
-  @extend %normalize;
+  @extend %normalizeIndents;
 }
 
 p {
-  @extend %normalize;
+  @extend %normalizeIndents;
 }
 
 ul {
-  @extend %normalize;
+  @extend %normalizeIndents;
 }
 
 ul li {

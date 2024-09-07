@@ -1,17 +1,17 @@
 /* Сlients */
 
 .clients__list {
-  @media screen and (min-width: 479px) {
+  @media screen and (min-width: $mobile-width) {
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 15px));
     gap: 30px 30px;
   }
 
-  @media screen and (min-width: 767px) {
+  @media screen and (min-width: $tablet-width) {
     grid-template-columns: repeat(3, calc((100% - 4 * 15px) / 3));
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $desktop-width) {
     display: flex;
     gap: 30px 0;
     justify-content: space-between;
@@ -39,7 +39,7 @@
     fill: $accent-color;
   }
 
-  @media screen and (min-width: 1199px) {
+  @media screen and (min-width: $desktop-width) {
     width: 170px;
   }
 }

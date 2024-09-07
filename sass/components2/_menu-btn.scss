@@ -1,6 +1,6 @@
 .nav__burger {
   display: none;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet-width) {
     display: flex;
     @include flexBox(center, center);
     width: 40px;
@@ -36,7 +36,7 @@
 .nav__burger.is-open {
   position: fixed;
   right: 15px;
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: $tablet-width) {
     .nav__burger-open {
       display: none;
     }
