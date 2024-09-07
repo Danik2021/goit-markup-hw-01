@@ -17,7 +17,7 @@
   font-weight: 700;
   text-transform: uppercase;
   color: $button-color;
-  @extend %basik-text;
+  @extend %basic-text;
   @media screen and (min-width: $desktop-width) {
     text-align: left;
   }

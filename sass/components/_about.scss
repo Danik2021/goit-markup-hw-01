@@ -26,7 +26,7 @@
 }
 
 .about__list h3 {
-  @extend %basik-text;
+  @extend %basic-text;
   color: $title-text-color;
   font-weight: 700;
   text-transform: uppercase;
@@ -35,7 +35,7 @@
 
 .about__list p {
   color: #757575;
-  @extend %basik-text;
+  @extend %basic-text;
   font-weight: 400;
   letter-spacing: $main-letter-spacing;
 }

@@ -49,7 +49,7 @@
 
   .location {
     width: 231px;
-    @extend %basik-text;
+    @extend %basic-text;
     font-style: normal;
     letter-spacing: $main-letter-spacing;
     color: $button-color;

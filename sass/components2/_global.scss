@@ -67,7 +67,7 @@ button {
 
 a.email,
 a.phone {
-  @extend %basik-text;
+  @extend %basic-text;
   letter-spacing: $main-letter-spacing;
   color: $primary-text-color;
   font-weight: 500;

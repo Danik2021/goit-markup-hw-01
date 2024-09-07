@@ -113,7 +113,7 @@
 
 .nav__menu .nav__item {
   display: inline-block;
-  @extend %basik-text;
+  @extend %basic-text;
   color: $title-text-color;
   letter-spacing: $main-letter-spacing;
   font-weight: 500;
