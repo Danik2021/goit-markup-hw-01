@@ -1,3 +1,4 @@
-@import './utils2/normalize', './utils2/variables', './utils2/extend', './utils2/mixin',
-  './utils2/animation', './components2/global', './components2/header', './components2/menu-btn',
-  './components2/main', './components2/projects', './components2/footer', './components2/form';
+@import './utils/shared/normalize', './utils/shared/variables', './utils/shared/extend',
+  './utils/shared/mixin', './utils/shared/animation', './components/portfolio/global',
+  './components/portfolio/header', './components/portfolio/menu-btn', './components/portfolio/main',
+  './components/portfolio/projects', './components/portfolio/footer', './components/portfolio/form';

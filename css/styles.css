@@ -438,7 +438,7 @@ a.phone {
   margin: 0 auto;
   padding: 0 15px;
 }
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 467px) {
   .header__container {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -459,7 +459,7 @@ a.phone {
   }
 }
 
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 467px) {
   .header__contacts {
     display: none;
   }
@@ -516,12 +516,12 @@ a.phone {
   display: flex;
   height: 100%;
 }
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 467px) {
   .nav {
     display: none;
   }
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 1199px) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -632,7 +632,7 @@ a.phone {
   height: 400px;
   /* */
 }
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 467px) {
   .overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), image-set(url("../images/background-480.jpg") 1x, url("../images/background-480@2x.jpg") 2x);
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), -webkit-image-set(url("../images/background-480.jpg") 1x, url("../images/background-480@2x.jpg") 2x);
@@ -751,12 +751,12 @@ a.phone {
   letter-spacing: 0.03em;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 467px) {
   .about__list li {
     width: 100%;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
   .about__list li {
     width: calc(50% - 15px);
   }
@@ -831,7 +831,7 @@ a.phone {
 }
 
 /* Сlients */
-@media screen and (min-width: 479px) {
+@media screen and (min-width: 467px) {
   .clients__list {
     display: grid;
     grid-template-columns: repeat(2, calc(50% - 15px));
@@ -1001,7 +1001,7 @@ a.phone {
 .footer {
   background-color: #2f303a;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 467px) {
   .footer .container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1064,7 +1064,7 @@ a.phone {
   color: #ffffff;
   text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 467px) {
   .footer__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1340,7 +1340,7 @@ a.phone {
   padding-right: 16px;
   border-radius: 4px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 467px) {
   .subscribe__cont .subscribe__input {
     width: 450px;
   }
@@ -1377,7 +1377,7 @@ a.phone {
   width: 24px;
   height: 24px;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 467px) {
   .subscribe__cont {
     display: -webkit-box;
     display: -ms-flexbox;
