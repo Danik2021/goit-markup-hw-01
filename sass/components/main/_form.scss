@@ -1,0 +1,243 @@
+// Form
+.subscribe {
+  @media screen and (min-width: $tablet-width) {
+    grid-column: 1 / -1;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+}
+
+.subscribe__title {
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $button-color;
+  @extend %basic-text;
+  @media screen and (min-width: $desktop-width) {
+    text-align: left;
+  }
+}
+
+.subscribe__cont {
+  display: flex;
+  gap: 0 12px;
+
+  .subscribe__input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: $button-color;
+    background-color: transparent;
+    width: 358px;
+    height: 58px;
+    font-size: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-radius: 4px;
+
+    @media screen and (min-width: $mobile-width) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: $desktop-width) {
+      width: 358px;
+    }
+  }
+
+  .subscribe__button {
+    width: 200px;
+    height: 58px;
+    padding: 10px 28px;
+    display: flex;
+    @include flexBox(start, center);
+    gap: 0 12px;
+    border: none;
+    border-radius: $border-radius;
+    color: $button-color;
+    font-weight: 700;
+    letter-spacing: $main-letter-spacing;
+    line-height: $main-line-height;
+    background-color: $accent-color;
+    cursor: pointer;
+  }
+
+  .subscribe__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  @media screen and (min-width: $mobile-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px 0px;
+  }
+
+  @media screen and (min-width: $desktop-width) {
+    flex-direction: row;
+    gap: 0 12px;
+  }
+}
+
+.form {
+  @extend %main-flexbox;
+  padding: 0px 32px;
+}
+
+.form__input-label {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 28px;
+  font-size: 12px;
+  color: $primary-text-color;
+  text-align: center;
+}
+
+.form__input-label:nth-child(3) {
+  margin-bottom: 10px;
+}
+
+.form__container-label {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  column-gap: 5px;
+  margin-bottom: 30px;
+}
+
+.form__container--checkbox {
+  display: flex;
+  @include flexBox(center, center);
+  column-gap: 6px;
+  @media screen and (max-width: $desktop-width) {
+    font-size: 12px;
+  }
+}
+
+.form__input-text {
+  position: absolute;
+  left: 40px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.comment-field-label {
+  text-align: start;
+  color: $primary-text-color;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.form__icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  fill: $title-text-color;
+}
+
+.form__input {
+  width: 100%;
+  height: 40px;
+  padding: 11px 12px 11px 38px;
+  cursor: pointer;
+}
+
+.form__input:not(:-moz-placeholder-shown) + .form__input-text {
+  position: absolute;
+  transform: translateY(-15px);
+  top: 0;
+  left: 0;
+}
+
+.form__input:not(:-ms-input-placeholder) + .form__input-text {
+  position: absolute;
+  transform: translateY(-15px);
+  top: 0;
+  left: 0;
+}
+
+.form__input:focus + .form__input-text,
+.form__input:not(:placeholder-shown) + .form__input-text {
+  position: absolute;
+  transform: translateY(-15px);
+  top: 0;
+  left: 0;
+}
+
+.form__input-label:focus-within .form__icon {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 10px;
+  fill: $accent-color;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.comment-field {
+  display: block;
+  width: 100%;
+  height: 120px;
+  resize: none;
+  border-radius: 4px;
+  padding: 12px 16px;
+  margin-bottom: 20px;
+}
+
+.form-privacy {
+  text-decoration: underline;
+  color: $accent-color;
+  @media screen and (max-width: $desktop-width) {
+    font-size: 12px;
+  }
+}
+
+.form-submit {
+  display: inline-block;
+  width: 200px;
+  padding: 10px 52px;
+  background-color: $accent-color;
+  color: $button-color;
+  font-weight: 700;
+  line-height: $main-line-height;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 4px;
+  border: transparent;
+}
+
+.form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-label {
+  border: 2px solid $title-text-color;
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border-radius: 1px;
+}
+
+.form__container--checkbox:focus-within .checkbox-label {
+  background-image: url(../images/icon/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  border: transparent;
+}
